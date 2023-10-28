@@ -1,0 +1,17 @@
+.arrow {
+  width: 64px;
+  height: 64px;
+  right: 30px;
+  bottom: 30px;
+
+  &__img {
+    width: 35px;
+    margin-top: 13px;
+  }
+
+  &:hover {
+    background-color: $dark-grey;
+    &__img {
+    }
+  }
+}

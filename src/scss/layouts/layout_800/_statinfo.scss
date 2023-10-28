@@ -1,0 +1,19 @@
+.statinfo-container {
+  width: 85%;
+
+  &__cactus {
+    bottom: 0;
+  }
+
+  &__dragon {
+    display: block;
+    position: absolute;
+    top: -105px;
+    right: 25px;
+  }
+}
+
+.statinfo__item__description {
+  width: 100%;
+  min-width: 600px;
+}

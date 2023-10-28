@@ -1,0 +1,156 @@
+.programs {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: $blue-programs;
+  position: relative;
+  padding-top: 60px;
+  margin-top: 100px;
+  padding-bottom: 60px;
+  margin-bottom: 100px;
+
+  //   WAVES
+  &__waves {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+
+    & svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 101px;
+    }
+
+    &__shape-fill {
+      fill: $blue-programs;
+    }
+  }
+  // WAVES END
+
+  &__intro {
+    @include intro;
+  }
+
+  &__title {
+    @include h2;
+    padding-bottom: 48px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding-inline-start: 0;
+
+    &__item {
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 60px 30px 70px;
+      border-radius: 30px;
+      position: relative;
+
+      &_1 {
+        background-color: $white;
+        margin-bottom: 50px;
+      }
+      &_2 {
+        background-color: $beige;
+        margin-bottom: 50px;
+      }
+      &_3 {
+        background-color: $dark-blue;
+      }
+
+      &__title {
+        text-align: center;
+        font-size: 40px;
+        line-height: 48px;
+        margin: 4px 0 18px;
+        font-family: $titleFontFamily;
+        font-weight: 400;
+        color: $dark-grey;
+      }
+
+      &__description {
+        text-align: center;
+        font-size: 22px;
+        line-height: 28px;
+        margin: 0 0 16px 0;
+        font-family: $titleFontFamily;
+        font-weight: 400;
+        color: $main;
+
+        &_3 {
+          color: $white;
+        }
+      }
+
+      &__sub-list {
+        list-style-type: none;
+        padding-inline-start: 0;
+      }
+
+      &__sub-item {
+        padding: 8px 0px;
+        line-height: 24px;
+        color: $dark-grey;
+        &_3 {
+          color: $white;
+        }
+        &__check {
+          color: $main;
+          font-family: $descriptionFontFamily;
+          font-size: 24px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  &__btn-container {
+    text-align: center;
+  }
+  &__btn {
+    @include button;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: calc(50% - 25px);
+    bottom: -25px;
+
+    &__img {
+      width: 40px;
+      padding: 5px;
+    }
+  }
+
+  //   WAVES-2
+  &__waves-2 {
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    & svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 101px;
+    }
+
+    &__shape-fill {
+      fill: $blue-programs;
+    }
+  }
+  // WAVES-2 END
+
+  &__bg-img {
+    display: none;
+  }
+}

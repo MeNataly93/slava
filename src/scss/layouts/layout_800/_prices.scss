@@ -1,0 +1,26 @@
+.prices {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__title {
+    font-size: 48px;
+  }
+
+  &__prices-list__item__img-container {
+    -webkit-mask-image: url(../i/prices_mask.svg);
+    -webkit-mask-size: 101% 100%;
+    -webkit-mask-repeat: no-repeat;
+  }
+
+  &__btn-section {
+    &__btn {
+      &:hover {
+        color: #fff;
+        &:after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.header {  
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // *LOGO
+&_logo {
+    display: none;
+}
+
+// *MENU
+    &_menu {
+            width: 30px;
+    height: 30px;
+    margin-left: 20px;
+display: flex;
+align-items: center;      
+border-color: white;
+&_img{
+width: 20px;
+    height: 20px;
+    border-radius: 3px;
+border-color: white; 
+margin: auto;  
+ }
+    }
+
+    // *TEXT NEAR LOGO
+    &_text-logo {
+        color: white;
+            font-size: 13px;
+                font-family: serif;
+                display: none;
+    }
+
+    // *CONTACTS
+    &_contacts {
+            padding-right: 20px;
+
+        &_text {
+            color: white;
+            font-size: 10px;
+            line-height: 22px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    
+        }
+        &_phone {
+            color: white;
+            font-size: 25px;
+font-family: $mainFontFamily;
+font-weight: bold;    }}
+
+    // *ICONS OF CONTACTS
+
+    &_sosial-media {
+        display: none;
+        
+    }
+}
+

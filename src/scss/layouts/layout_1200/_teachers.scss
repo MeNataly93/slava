@@ -1,0 +1,37 @@
+.teachers {
+  width: 100%;
+  max-width: 1584px;
+
+  &__title {
+    font-size: 54px;
+  }
+  &__list {
+    grid-template-columns: repeat(4, 1fr);
+
+    &__item {
+      &__outset {
+        position: relative;
+        cursor: pointer;
+      }
+      &__inset {
+        position: absolute;
+        width: 105%;
+        height: 102%;
+        border-radius: 100%;
+        border: 4px dashed transparent;
+        top: -7px;
+        left: -8px;
+        animation: spin 20250ms linear infinite;
+        &:hover {
+          border-color: $dark-blue;
+        }
+
+        @keyframes spin {
+          to {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+  }
+}
