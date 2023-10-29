@@ -1,0 +1,69 @@
+.banner {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 25px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  min-height: 580px;
+  background: linear-gradient(180deg, #fe8b05 0%, #fed714 139.52%);
+  border-radius: 40px;
+  position: relative;
+
+  &_main {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &_title {
+    color: white;
+    font-size: 25px;
+    font-family: $wowFontFamily;
+    font-weight: 700;
+    line-height: 25px;
+    margin: 0 0 40px 0;
+    text-align: center;
+  }
+
+  &_button {
+    margin: 0 auto;
+    border-radius: 26px;
+    font-size: 12px;
+    line-height: 12px;
+    height: 55px;
+    width: 280px;
+    background: linear-gradient(267.08deg, #ff66d4 0.55%, #a966ff 99.66%);
+    box-shadow: 0 8px 15px rgba(157, 52, 184, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: $wowFontFamily;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  &_text {
+    margin: 25px 0 0 0;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 400;
+    width: 90%;
+  }
+
+  &_img {
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+  }
+}
