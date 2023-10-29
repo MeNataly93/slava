@@ -1,62 +1,67 @@
-.header {  
-    background-color: black;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header {
+  background-color: black;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    // *LOGO
-&_logo {
+  // *LOGO
+  &_logo {
     display: none;
-}
+    line-height: 0;
 
-// *MENU
-    &_menu {
-            width: 30px;
+    &_img {
+      width: 125px;
+    }
+  }
+
+  // *MENU
+  &_menu {
+    width: 30px;
     height: 30px;
-    margin-left: 20px;
-display: flex;
-align-items: center;      
-border-color: white;
-&_img{
-width: 20px;
-    height: 20px;
-    border-radius: 3px;
-border-color: white; 
-margin: auto;  
- }
+    display: flex;
+    align-items: center;
+    border-color: white;
+    &_img {
+      width: 20px;
+      height: 20px;
+      border-radius: 3px;
+      border-color: white;
+      margin: auto;
     }
+  }
 
-    // *TEXT NEAR LOGO
-    &_text-logo {
-        color: white;
-            font-size: 13px;
-                font-family: serif;
-                display: none;
+  // *TEXT NEAR LOGO
+  &_text-logo {
+    color: white;
+    font-size: 15px;
+    font-family: $mainFontFamily;
+    display: none;
+  }
+
+  // *CONTACTS
+  &_contacts {
+    padding-right: 20px;
+
+    &_text {
+      color: white;
+      font-size: 10px;
+      line-height: 15px;
+      font-family: "Open Sans", Arial, sans-serif;
     }
-
-    // *CONTACTS
-    &_contacts {
-            padding-right: 20px;
-
-        &_text {
-            color: white;
-            font-size: 10px;
-            line-height: 22px;
-    font-family: 'Open Sans', Arial, sans-serif;
-    
-        }
-        &_phone {
-            color: white;
-            font-size: 25px;
-font-family: $mainFontFamily;
-font-weight: bold;    }}
-
-    // *ICONS OF CONTACTS
-
-    &_sosial-media {
-        display: none;
-        
+    &_phone {
+      color: white;
+      font-size: 25px;
+      font-family: $mainFontFamily;
+      font-weight: bold;
     }
+  }
+
+  // *ICONS OF CONTACTS
+
+  &_sosial-media {
+    display: none;
+  }
 }
-

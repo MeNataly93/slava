@@ -1,0 +1,14 @@
+.header {
+  // *TEXT NEAR LOGO
+  &_text-logo {
+    display: block;
+    margin-left: 10px;
+  }
+  &_menu-block {
+    display: flex;
+  }
+
+  &_contacts {
+    margin-right: 20px;
+  }
+}

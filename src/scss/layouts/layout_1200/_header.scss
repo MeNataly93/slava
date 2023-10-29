@@ -1,3 +1,15 @@
 .header {
- 
+  &_menu {
+    display: none;
+  }
+
+  &_logo {
+    display: block;
+  }
+
+  &_text-logo {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 }

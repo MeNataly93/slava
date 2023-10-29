@@ -1,24 +1,40 @@
-.header {  
-    
-    &_contacts {
-        padding: 0;
-        text-align: center;
-        margin-left: 14px;
-    }
-    // *ICONS OF CONTACTS
+.header {
+  position: relative;
 
-    &_sosial-media {
-        display:flex;
-        list-style-type: none;
-        justify-content: space-between;
-        margin-right: 20px;
-            padding-inline-start: 0;
-        &_inst {
-            margin-right: 5px;
-        }
-        &_fb {
-            margin-left: 5px;
-        }
+  //   &_contacts {
+  //     position: absolute;
+  //     left: 0;
+  //     right: 0;
+  //     top: 5px;
+  //     margin: auto;
+  //     padding: 0;
+  //     text-align: center;
+  //   }
+
+  &_contacts {
+    margin-right: 5px;
+    text-align: right;
+  }
+  &_right-part {
+    display: flex;
+    align-items: center;
+  }
+  // *ICONS OF CONTACTS
+
+  &_sosial-media {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    margin-right: 20px;
+    padding-inline-start: 0;
+
+    &_inst {
+      margin-right: 5px;
+      line-height: 0;
     }
+    &_fb {
+      margin-left: 5px;
+      line-height: 0;
+    }
+  }
 }
-
