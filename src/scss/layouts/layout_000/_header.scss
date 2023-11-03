@@ -49,12 +49,12 @@
       color: white;
       font-size: 10px;
       line-height: 15px;
-      font-family: "Open Sans", Arial, sans-serif;
+      font-family: $mainFontFamily;
     }
     &_phone {
       color: white;
       font-size: 25px;
-      font-family: $mainFontFamily;
+      font-family: $wowFontFamily;
       font-weight: bold;
     }
   }

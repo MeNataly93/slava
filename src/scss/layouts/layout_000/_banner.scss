@@ -1,11 +1,12 @@
 .banner {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
   margin-top: 25px;
   padding-top: 60px;
-  padding-bottom: 20px;
-  min-height: 580px;
+  // padding-bottom: 20px;
+  // min-height: 580px;
   background: linear-gradient(180deg, #fe8b05 0%, #fed714 139.52%);
+
   border-radius: 40px;
   position: relative;
 
@@ -18,7 +19,7 @@
 
   &_title {
     color: white;
-    font-size: 25px;
+    font-size: 27px;
     font-family: $wowFontFamily;
     font-weight: 700;
     line-height: 25px;
@@ -29,7 +30,7 @@
   &_button {
     margin: 0 auto;
     border-radius: 26px;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 12px;
     height: 55px;
     width: 280px;
@@ -49,7 +50,7 @@
   }
 
   &_text {
-    margin: 25px 0 0 0;
+    margin: 40px 0 0 0;
     font-size: 12px;
     line-height: 20px;
     letter-spacing: 2px;
@@ -59,11 +60,16 @@
     font-family: "Open Sans", Arial, sans-serif;
     font-weight: 400;
     width: 90%;
+    max-width: 250px;
   }
 
   &_img {
-    position: absolute;
+    display: block;
+    margin: auto;
+    margin-top: 100px;
     width: 100%;
-    bottom: 50px;
+    margin-bottom: 0;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
   }
 }
