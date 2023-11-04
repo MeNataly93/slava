@@ -1,0 +1,24 @@
+.banner {
+  display: flex;
+  &_main {
+    min-width: 50%;
+  }
+
+  &_title {
+    text-align: left;
+    max-width: 350px;
+    margin-top: 75px;
+    font-size: 38px;
+    line-height: 38px;
+  }
+
+  &_text {
+    text-align: left;
+    max-width: 350px;
+  }
+
+  &_img {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}

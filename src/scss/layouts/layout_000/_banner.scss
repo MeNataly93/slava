@@ -3,9 +3,16 @@
   margin-right: 50px;
   margin-top: 25px;
   padding-top: 60px;
-  // padding-bottom: 20px;
-  // min-height: 580px;
-  background: linear-gradient(180deg, #fe8b05 0%, #fed714 139.52%);
+  padding-bottom: 60px;
+  min-height: 580px;
+
+  background: rgb(134, 179, 45);
+  background: linear-gradient(
+    0deg,
+    rgba(134, 179, 45, 1) 0%,
+    rgba(159, 238, 0, 1) 83%,
+    rgba(134, 179, 45, 1) 100%
+  );
 
   border-radius: 40px;
   position: relative;
@@ -25,6 +32,8 @@
     line-height: 25px;
     margin: 0 0 40px 0;
     text-align: center;
+    text-transform: uppercase;
+    max-width: 200px;
   }
 
   &_button {
@@ -50,7 +59,8 @@
   }
 
   &_text {
-    margin: 40px 0 0 0;
+    margin: 0;
+    margin-bottom: 40px;
     font-size: 12px;
     line-height: 20px;
     letter-spacing: 2px;
@@ -66,10 +76,9 @@
   &_img {
     display: block;
     margin: auto;
-    margin-top: 100px;
-    width: 100%;
+    margin-top: 40px;
+    width: 80%;
+    max-width: 360px;
     margin-bottom: 0;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
   }
 }
