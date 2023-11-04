@@ -1,5 +1,8 @@
 .banner {
   display: flex;
+  width: 90%;
+  justify-content: space-between;
+  max-width: 80%;
   &_main {
     min-width: 50%;
   }
@@ -8,8 +11,8 @@
     text-align: left;
     max-width: 350px;
     margin-top: 75px;
-    font-size: 38px;
-    line-height: 38px;
+    font-size: 50px;
+    line-height: 50px;
   }
 
   &_text {
@@ -18,7 +21,11 @@
   }
 
   &_img {
-    margin-top: auto;
-    margin-bottom: auto;
+    width: 100%;
+    max-width: inherit;
+  }
+
+  &_main {
+    padding-left: inherit;
   }
 }

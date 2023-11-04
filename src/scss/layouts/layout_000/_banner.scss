@@ -3,7 +3,7 @@
   margin-right: 50px;
   margin-top: 25px;
   padding-top: 60px;
-  padding-bottom: 60px;
+  // padding-bottom: 60px;
   min-height: 580px;
 
   background: rgb(134, 179, 45);
@@ -26,14 +26,14 @@
 
   &_title {
     color: white;
-    font-size: 27px;
+    font-size: 32px;
     font-family: $wowFontFamily;
     font-weight: 700;
-    line-height: 25px;
+    line-height: 32px;
     margin: 0 0 40px 0;
     text-align: center;
     text-transform: uppercase;
-    max-width: 200px;
+    max-width: 250px;
   }
 
   &_button {
