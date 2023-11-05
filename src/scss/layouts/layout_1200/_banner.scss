@@ -1,10 +1,14 @@
 .banner {
   display: flex;
   width: 90%;
-  justify-content: space-between;
+  justify-content: space-around;
   max-width: 80%;
+  padding-top: 35px;
+  min-height: 515px;
   &_main {
-    min-width: 50%;
+    width: 500px;
+    max-width: 500px;
+    min-width: 500px;
   }
 
   &_title {
@@ -20,12 +24,33 @@
     max-width: 350px;
   }
 
+  &_img-block {
+    // position: relative;
+    // width: 500px;
+    padding-right: 40px;
+    position: relative;
+  }
+
   &_img {
+    position: absolute;
+    // width: 70%;
+    // height: 70%;
+    // max-width: max-content;
+    // left: 40px;
+
+    // // margin-bottom: initial;
+    max-width: 596px;
+    margin-top: 170px;
     width: 100%;
-    max-width: inherit;
   }
 
   &_main {
     padding-left: inherit;
+  }
+
+  &_button {
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }

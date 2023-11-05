@@ -4,7 +4,6 @@
   margin-top: 25px;
   padding-top: 60px;
   // padding-bottom: 60px;
-  min-height: 580px;
 
   background: rgb(134, 179, 45);
   background: linear-gradient(
@@ -42,7 +41,11 @@
     font-size: 14px;
     line-height: 12px;
     height: 55px;
-    width: 280px;
+    // width: 280px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 280px;
     background: linear-gradient(267.08deg, #ff66d4 0.55%, #a966ff 99.66%);
     box-shadow: 0 8px 15px rgba(157, 52, 184, 0.25);
     display: flex;

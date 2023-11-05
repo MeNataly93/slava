@@ -20,9 +20,9 @@
     font-size: 19px;
     line-height: 19px;
     height: 70px;
-    width: 428px;
+    max-width: 428px;
+
     border-radius: 48px;
-    padding-left: 10px;
 
     &::after {
       content: url(../../../i/img/fast-forward.png);

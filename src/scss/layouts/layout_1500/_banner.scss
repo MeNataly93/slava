@@ -4,11 +4,10 @@
   // justify-content: space-between;
   // max-width: 80%;
   &_main {
-    min-width: 50%;
   }
 
   &_title {
-    // text-align: left;
+    text-align: left;
     max-width: 495px;
     margin-left: 65px;
     // margin-top: 75px;
@@ -17,10 +16,15 @@
   }
 
   &_text {
-    max-width: 440px;
-    margin-left: 35px;
+    margin-left: 0;
   }
 
   &_img {
+    width: 80%;
+    height: 80%;
+  }
+
+  &_button {
+    margin-left: 65px;
   }
 }
