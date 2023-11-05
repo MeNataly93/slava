@@ -5,14 +5,16 @@
   padding-top: 60px;
   // padding-bottom: 60px;
 
-  background: rgb(134, 179, 45);
-  background: linear-gradient(
-    0deg,
-    rgba(134, 179, 45, 1) 0%,
-    rgba(159, 238, 0, 1) 83%,
-    rgba(134, 179, 45, 1) 100%
-  );
+  // background: rgb(134, 179, 45);
+  // background: linear-gradient(
+  //   0deg,
+  //   rgba(134, 179, 45, 1) 0%,
+  //   rgba(159, 238, 0, 1) 83%,
+  //   rgba(134, 179, 45, 1) 100%
+  // );
 
+  // background: linear-gradient(180deg, #fe8b05 0%, #fed714 139.52%);
+  background-image: url(../../../i/img/bg.png);
   border-radius: 40px;
   position: relative;
 
