@@ -2,7 +2,7 @@
   display: flex;
   width: 90%;
   justify-content: space-around;
-  max-width: 80%;
+  max-width: 100%;
   padding-top: 35px;
   min-height: 515px;
   &_main {
@@ -25,22 +25,15 @@
   }
 
   &_img-block {
-    // position: relative;
-    // width: 500px;
+    width: 500px;
     padding-right: 40px;
     position: relative;
   }
 
   &_img {
     position: absolute;
-    // width: 70%;
-    // height: 70%;
-    // max-width: max-content;
-    // left: 40px;
-
-    // // margin-bottom: initial;
-    max-width: 596px;
-    margin-top: 170px;
+    bottom: 0;
+    max-width: initial;
     width: 100%;
   }
 

@@ -1,27 +1,25 @@
 .banner {
-  // display: flex;
-  // width: 90%;
-  // justify-content: space-between;
-  // max-width: 80%;
-  &_main {
-  }
+  width: 80%;
 
+  &_main {
+    width: 550px;
+    max-width: 550px;
+    min-width: 550px;
+  }
   &_title {
     text-align: left;
     max-width: 495px;
     margin-left: 65px;
-    // margin-top: 75px;
     font-size: 55px;
     line-height: 55px;
   }
 
-  &_text {
-    margin-left: 0;
+  &_img-block {
+    width: 550px;
   }
 
-  &_img {
-    width: 80%;
-    height: 80%;
+  &_text {
+    margin-left: 0;
   }
 
   &_button {
