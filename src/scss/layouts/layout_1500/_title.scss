@@ -1,0 +1,27 @@
+.title-div {
+  max-width: 1500px;
+  &_motor {
+    width: 45vw;
+
+    &_img {
+      width: 665px;
+      max-width: 665px;
+    }
+  }
+
+  &_list_ul {
+    grid-template-rows: 200px 200px;
+  }
+
+  &_item {
+    font-size: 27px;
+    line-height: 30px;
+    &::after {
+      width: 70px;
+      height: 70px;
+      background-size: 70px 70px;
+      top: 25px;
+      right: 25px;
+    }
+  }
+}
