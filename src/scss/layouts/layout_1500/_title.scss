@@ -3,9 +3,15 @@
   &_motor {
     width: 45vw;
 
+    &_button {
+      bottom: -100px;
+      left: 310px;
+    }
+
     &_img {
-      width: 665px;
-      max-width: 665px;
+      width: 580px;
+      max-width: 580px;
+      left: 100px;
     }
   }
 

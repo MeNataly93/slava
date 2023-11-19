@@ -14,9 +14,21 @@
     flex-grow: 1;
     width: 65vw;
     // grid-area: f-1200;
+
+    &_img {
+      width: 500px;
+      max-width: 500px;
+      top: 25px;
+      left: 80px;
+    }
+    &_button {
+      bottom: -15px;
+      left: 235px;
+    }
   }
 
   &_text {
+    text-align: left;
     margin-top: 80px;
     margin-bottom: 45px;
     // grid-area: s-1200;
@@ -24,6 +36,10 @@
 
   &_list {
     // grid-area: l-1200;
+
+    &_ul {
+      grid-template-rows: 160px 160px;
+    }
   }
 }
 
