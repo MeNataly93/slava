@@ -1,0 +1,103 @@
+.heroes {
+  &_title {
+    margin-top: 100px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    &_name {
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      letter-spacing: 1.2px;
+      font-weight: 900;
+      font-family: $wowFontFamily;
+    }
+    &_text1 {
+      display: block;
+      text-align: center;
+      padding: 20px 0 34px;
+      font-size: 14px;
+      line-height: 18px;
+      text-transform: uppercase;
+      letter-spacing: 1.8px;
+      color: #f1419c;
+      font-family: $mainFontFamily;
+    }
+  }
+
+  &_grid {
+    &_block {
+      width: 70%;
+      max-width: 430px;
+
+      margin-top: 70px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 50px;
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      box-shadow: 0 0 50px #e4d8e4;
+      border-radius: 20px;
+      position: relative;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #3a3a3a;
+      font-size: 15px;
+      line-height: 22px;
+      font-family: $mainFontFamily;
+      font-weight: 400;
+      letter-spacing: 0.25px;
+
+      &_1 {
+        margin-top: 55px;
+      }
+      &_img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        max-width: 250px;
+
+        margin: 0 auto;
+      }
+
+      &_btn {
+        font-size: 12px;
+        line-height: 14px;
+        background: linear-gradient(90.86deg, #ae67fd 0.17%, #fc67d6 99.85%);
+        border-radius: 64px;
+        box-shadow: none;
+        display: block;
+        text-transform: uppercase;
+        border: none;
+        font-family: $wowFontFamily;
+        letter-spacing: 1px;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+        padding: 16px;
+        text-align: center;
+        max-width: none;
+        margin: 0 auto;
+        width: 185px;
+        text-decoration: none;
+        color: #004b91;
+        cursor: pointer;
+        font-weight: 900;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      &_heroes {
+        font-family: $wowFontFamily;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 1px;
+
+        display: block;
+        cursor: pointer;
+        text-align: center;
+        margin-top: 50px;
+      }
+    }
+  }
+}

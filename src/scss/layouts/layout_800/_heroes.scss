@@ -1,0 +1,24 @@
+.heroes {
+  &_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-gap: 30px;
+
+    &_block {
+      width: 100%;
+    }
+
+    &_block_img {
+      width: 180px;
+      max-width: 180px;
+    }
+
+    &_block_2 {
+      margin-top: 55px;
+    }
+  }
+}
