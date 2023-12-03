@@ -1,0 +1,15 @@
+.heroes {
+  &_title_name {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  &_grid {
+    width: 90%;
+    max-width: 800px;
+    grid-template-areas:
+      "first sec"
+      "third  forth"
+      "fifth  sixth"
+      "seventh seventh";
+  }
+}

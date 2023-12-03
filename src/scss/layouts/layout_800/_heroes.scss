@@ -7,9 +7,36 @@
     margin-left: auto;
     margin-right: auto;
     grid-gap: 30px;
-
+    grid-template-areas:
+      "first sec"
+      "third  forth"
+      "fifth  sixth"
+      "seventh seventh";
     &_block {
       width: 100%;
+
+      &_1 {
+        grid-area: first;
+      }
+      &_2 {
+        grid-area: sec;
+      }
+      &_3 {
+        grid-area: third;
+      }
+      &_4 {
+        grid-area: forth;
+      }
+      &_5 {
+        grid-area: fifth;
+      }
+      &_6 {
+        grid-area: sixth;
+      }
+      &_7 {
+        grid-area: seventh;
+        width: 285px;
+      }
     }
 
     &_block_img {

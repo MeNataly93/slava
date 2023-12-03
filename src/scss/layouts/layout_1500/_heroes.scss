@@ -1,0 +1,18 @@
+.heroes {
+  &_title {
+    width: 80%;
+    &_name {
+      font-size: 50px;
+      line-height: 55px;
+    }
+  }
+
+  &_grid {
+    max-width: 1160px;
+    &_block {
+      &_7 {
+        width: 366.66px;
+      }
+    }
+  }
+}
