@@ -1,6 +1,10 @@
 .heroes {
+  &_grid_block {
+    padding-top: 190px;
+  }
   &_grid_block_img {
-    width: 300px;
+    width: 250px;
     max-width: 300px;
+    top: -150px;
   }
 }

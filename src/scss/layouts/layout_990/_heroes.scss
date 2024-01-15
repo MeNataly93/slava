@@ -11,5 +11,12 @@
       "third  forth"
       "fifth  sixth"
       "seventh seventh";
+
+    &_block {
+      padding-top: 175px;
+      &_img {
+        width: 220px;
+      }
+    }
   }
 }

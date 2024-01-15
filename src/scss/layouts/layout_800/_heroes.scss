@@ -13,7 +13,9 @@
       "fifth  sixth"
       "seventh seventh";
     &_block {
+      padding-top: 160px;
       width: 100%;
+      margin-bottom: 80px;
 
       &_1 {
         grid-area: first;
@@ -40,8 +42,9 @@
     }
 
     &_block_img {
-      width: 180px;
-      max-width: 180px;
+      width: 200px;
+      max-width: 2000px;
+      top: -120px;
     }
 
     &_block_2 {
