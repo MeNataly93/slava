@@ -1,0 +1,42 @@
+.tilleg {
+  &_title {
+    // margin-bottom: 1.5em;
+    padding-bottom: 39px;
+    font-size: 28px;
+    display: block;
+    text-align: center;
+    line-height: 1.2;
+    padding: 20px 0;
+    color: #3a3a3a;
+    letter-spacing: 1.2px;
+    font-family: $wowFontFamily;
+  }
+
+  &_list {
+    list-style: none;
+    padding-inline-start: 0px;
+    &_frame {
+      padding: 0 15px;
+      margin-top: 15px;
+    }
+  }
+
+  &_item-bg {
+    background: #ffd600;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 1.3em 1em;
+    &_2 {
+      background: #f366db;
+    }
+    &_3 {
+      background: #ff0650;
+    }
+  }
+
+  &_item-img {
+    width: 100%;
+  }
+}
