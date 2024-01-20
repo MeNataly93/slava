@@ -1,0 +1,45 @@
+.tilleg {
+  &_title {
+    margin-bottom: 25px;
+  }
+  &_list {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "tf tf ts ts tt tt"
+      "tfr tfr tfv tfv tsx tsx"
+      ". tsn tsn te te .";
+    column-gap: 20px;
+    row-gap: 20px;
+
+    &_frame {
+      padding: 0;
+      margin-top: 0;
+    }
+  }
+}
+
+.tf {
+  grid-area: tf;
+}
+.ts {
+  grid-area: ts;
+}
+.tt {
+  grid-area: tt;
+}
+.tfr {
+  grid-area: tfr;
+}
+.tfv {
+  grid-area: tfv;
+}
+.tsx {
+  grid-area: tsx;
+}
+.tsn {
+  grid-area: tsn;
+}
+.te {
+  grid-area: te;
+}

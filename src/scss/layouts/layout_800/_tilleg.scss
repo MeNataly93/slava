@@ -4,6 +4,10 @@
   margin-left: auto;
   margin-right: auto;
 
+  &_title {
+    margin-top: 75px;
+  }
+
   &_list {
     display: grid;
     grid-template-columns: 50% 50%;

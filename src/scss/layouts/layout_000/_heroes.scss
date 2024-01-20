@@ -1,12 +1,12 @@
 .heroes {
   &_title {
-    margin-top: 100px;
+    margin-top: 65px;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
     &_name {
-      font-size: 24px;
-      line-height: 28px;
+      font-size: 20px;
+      line-height: 24px;
       text-align: center;
       letter-spacing: 1.2px;
       font-weight: 900;
@@ -22,7 +22,7 @@
       letter-spacing: 1.8px;
       color: #f1419c;
       font-family: $mainFontFamily;
-      margin-bottom: 120px;
+      margin-bottom: 65px;
     }
   }
 
@@ -34,7 +34,7 @@
       margin-top: 70px;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 200px;
+      margin-bottom: 100px;
       padding-bottom: 50px;
       display: flex;
       flex-direction: column;

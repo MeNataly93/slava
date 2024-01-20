@@ -22,6 +22,8 @@
   }
 
   &_item-bg {
+    border-radius: 40px 40px 0 0;
+
     background: #ffd600;
     text-align: center;
     color: #fff;
@@ -34,9 +36,25 @@
     &_3 {
       background: #ff0650;
     }
+    &_4 {
+      background: #5497de;
+    }
+    &_5 {
+      background: #ec6f6f;
+    }
+    &_6 {
+      background: #9f40ff;
+    }
+    &_7 {
+      background: #5ab8c3;
+    }
+    &_8 {
+      background: #ffc226;
+    }
   }
 
   &_item-img {
     width: 100%;
+    border-radius: 0 0 40px 40px;
   }
 }
