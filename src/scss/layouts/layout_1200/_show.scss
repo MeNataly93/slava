@@ -1,0 +1,11 @@
+.show {
+  width: 80%;
+  max-width: 1800px;
+  &_title {
+    font-size: 44px;
+    line-height: 1.2;
+  }
+  &_txt {
+    font-size: 24px;
+  }
+}

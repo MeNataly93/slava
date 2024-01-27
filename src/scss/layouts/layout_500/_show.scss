@@ -1,0 +1,9 @@
+.show {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  max-width: 500px;
+  &_list_block {
+    width: 100%;
+  }
+}
