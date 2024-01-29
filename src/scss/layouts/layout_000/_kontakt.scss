@@ -1,0 +1,178 @@
+.kontakt {
+  &_block {
+    &_h1 {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 28px;
+      display: block;
+      text-align: center;
+      line-height: 1.2;
+      padding: 20px 0;
+      color: #3a3a3a;
+      letter-spacing: 1.2px;
+      font-family: $wowFontFamily;
+    }
+
+    &_txt {
+      color: #747474;
+      font-size: 18px;
+      line-height: 18px;
+      font-family: $wowFontFamily;
+      text-align: center;
+      display: block;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+    }
+
+    &_number {
+      background-image: url(../../../i/img/blue_box.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: block;
+      font-size: 28px;
+      line-height: 28px;
+      padding: 36px 0 120px;
+      width: 100%;
+      background-size: contain;
+      font-family: $wowFontFamily;
+      font-weight: bold;
+
+      color: #2b3d3f;
+      text-decoration: none;
+      cursor: pointer;
+      text-align: center;
+      font-weight: 400;
+      letter-spacing: 0.25px;
+
+      &_gratis {
+        margin-top: 20px;
+        background-color: #e5206b;
+        max-width: 260px;
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        color: white;
+        transform: rotate(-7deg);
+      }
+    }
+  }
+
+  &_btn {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    &_btn1 {
+      width: 210px;
+      padding: 10px 30px 10px 55px;
+      border-radius: 64px;
+      background: linear-gradient(
+        180deg,
+        #61ad46 0%,
+        #40a85d 53%,
+        #519a37 100%
+      );
+      font-size: 12px;
+      color: white;
+      line-height: 35px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+      text-align: center;
+      font-weight: bold;
+      vertical-align: middle;
+      position: relative;
+      margin-right: 20px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 45px;
+        width: 35px;
+        height: 35px;
+        background-image: url(../../../i/img/phone.svg);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 100% 100%;
+        margin: 0 4px -6px -4px;
+      }
+    }
+
+    &_btn2 {
+      width: 210px;
+      padding: 10px 40px 10px 80px;
+      border-radius: 64px;
+      background: linear-gradient(
+        180deg,
+        #61ad46 0%,
+        #40a85d 53%,
+        #519a37 100%
+      );
+      font-size: 12px;
+      color: white;
+      line-height: 35px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+      text-align: center;
+      font-weight: bold;
+      vertical-align: middle;
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 30px;
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-position: 0 -2px;
+        background-size: 100% 100%;
+        // margin: 0 4px -6px -4px;
+        background-image: url(../../../i/img/mes.svg);
+      }
+    }
+  }
+}
+
+// .ringer {
+//   &:before {
+//     content: "";
+//     position: absolute;
+//     display: block;
+//     left: 30px;
+//     width: 35px;
+//     height: 35px;
+//     background-image: url(../../../i/img/phone.svg);
+//     background-repeat: no-repeat;
+//     background-position: 0 0;
+//     background-size: 100% 100%;
+//     margin: 0 4px -6px -4px;
+//   }
+// }
+
+// .messenger {
+//   &:before {
+//     content: "";
+//     position: absolute;
+//     display: block;
+//     left: 30px;
+//     width: 35px;
+//     height: 35px;
+//     background-repeat: no-repeat;
+//     background-position: 0 0;
+//     background-size: 100% 100%;
+//     // margin: 0 4px -6px -4px;
+//     background-image: url(../../../i/img/mes.svg);
+//   }
+// }
