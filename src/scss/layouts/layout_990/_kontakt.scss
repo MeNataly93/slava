@@ -1,0 +1,22 @@
+.kontakt {
+  &_block {
+    width: 90%;
+    max-width: 800px;
+    &_number {
+      background-size: 850px 480px;
+      padding: 25px 0 90px;
+      &_gratis {
+        background-color: #1ab033;
+      }
+    }
+  }
+}
+
+.second-h1 {
+  font-size: 44px;
+}
+
+.second-txt {
+  font-size: 20px;
+  line-height: 24px;
+}

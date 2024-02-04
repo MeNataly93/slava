@@ -90,7 +90,9 @@
       font-weight: bold;
       vertical-align: middle;
       position: relative;
-      margin-right: 20px;
+      // margin-right: 20px;
+      margin-bottom: 10px;
+      box-shadow: 0 8px 15px rgba(157, 52, 184, 0.25);
 
       &:before {
         content: "";
@@ -127,6 +129,8 @@
       font-weight: bold;
       vertical-align: middle;
       position: relative;
+      margin-bottom: 10px;
+      box-shadow: 0 8px 15px rgba(157, 52, 184, 0.25);
 
       &:before {
         content: "";
@@ -144,35 +148,9 @@
     }
   }
 }
-
-// .ringer {
-//   &:before {
-//     content: "";
-//     position: absolute;
-//     display: block;
-//     left: 30px;
-//     width: 35px;
-//     height: 35px;
-//     background-image: url(../../../i/img/phone.svg);
-//     background-repeat: no-repeat;
-//     background-position: 0 0;
-//     background-size: 100% 100%;
-//     margin: 0 4px -6px -4px;
-//   }
-// }
-
-// .messenger {
-//   &:before {
-//     content: "";
-//     position: absolute;
-//     display: block;
-//     left: 30px;
-//     width: 35px;
-//     height: 35px;
-//     background-repeat: no-repeat;
-//     background-position: 0 0;
-//     background-size: 100% 100%;
-//     // margin: 0 4px -6px -4px;
-//     background-image: url(../../../i/img/mes.svg);
-//   }
-// }
+.second-h1 {
+  display: none;
+}
+.second-txt {
+  display: none;
+}

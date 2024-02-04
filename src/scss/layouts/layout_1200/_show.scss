@@ -1,6 +1,11 @@
 .show {
   width: 80%;
   max-width: 1800px;
+
+  &_list_block {
+    width: 70%;
+    max-width: 650px;
+  }
   &_title {
     font-size: 44px;
     line-height: 1.2;

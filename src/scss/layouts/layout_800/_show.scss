@@ -7,9 +7,12 @@
     font-size: 20px;
   }
   &_list {
-    width: 70%;
-    max-width: 800px;
+    width: 100%;
+    // max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    &_block {
+      width: 100%;
+    }
   }
 }
