@@ -1,5 +1,8 @@
 .show {
   &_title {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 28px;
     line-height: 28px;
     padding: 0 0 20px;
@@ -37,8 +40,10 @@
 
       &_h {
         text-align: center;
-        background: #9f40ff;
-        color: white;
+        // background: #9f40ff;
+        background: #ffcc5c;
+
+        color: black;
         padding: 1.3em 1em;
         font-weight: 500;
         font-size: 16px;
@@ -54,8 +59,15 @@
 }
 
 .bg {
-  background: linear-gradient(90deg, #fb3b6b 0%, #8d52e8 97.38%);
-
+  // background: linear-gradient(90deg, #fb3b6b 0%, #8d52e8 97.38%);
+  background: rgb(233, 51, 136);
+  background: linear-gradient(
+    0deg,
+    rgba(233, 51, 136, 1) 0%,
+    rgba(195, 94, 189, 1) 48%,
+    rgba(126, 131, 239, 1) 83%,
+    rgba(79, 199, 252, 1) 100%
+  );
   width: 100%;
   // max-width: 500px;
   // border-radius: 40px;
