@@ -1,0 +1,52 @@
+.prices {
+  max-width: 85%;
+
+  &_pack {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+
+    &_block {
+      width: 100%;
+      max-width: 100%;
+      min-width: 300px;
+      //   width: 320px;
+      //   max-width: 320px;
+
+      &_listin {
+        height: 500px;
+      }
+
+      &_1 {
+        height: initial;
+      }
+      &_2 {
+        height: initial;
+      }
+
+      &_price_2_old {
+        margin-top: 0;
+      }
+      &_price_3_old {
+        margin-top: 0;
+      }
+
+      &_price_1 {
+        margin-top: 48px;
+      }
+    }
+  }
+
+  &_extra {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.grid-1 {
+  gap: 20px;
+}
+.grid-2 {
+  gap: 20px;
+}
