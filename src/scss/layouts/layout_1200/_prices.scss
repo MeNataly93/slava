@@ -1,0 +1,37 @@
+.prices {
+  max-width: 1000px;
+
+  &_title {
+    font-size: 44px;
+    margin-bottom: 40px;
+  }
+
+  &_pack {
+    &_block {
+      width: 400px;
+      max-width: 400px;
+
+      &_price_1 {
+        margin-top: 100px;
+      }
+    }
+  }
+
+  &_avreise {
+    font-size: 36px;
+  }
+  &_kaker {
+    font-size: 36px;
+    margin-top: 20px;
+  }
+
+  &_extra_title {
+    font-size: 36px;
+  }
+}
+.grid-1 {
+  gap: 0px;
+}
+.grid-2 {
+  gap: 0px;
+}
