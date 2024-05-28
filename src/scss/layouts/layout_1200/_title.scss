@@ -25,6 +25,12 @@
     &_button {
       bottom: -15px;
       left: 235px;
+      font-size: 27px;
+      max-width: 345px;
+      width: 345px;
+      &::before {
+        margin-right: 50px;
+      }
     }
   }
 

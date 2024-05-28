@@ -4,10 +4,11 @@
   width: 80%;
   max-width: 500px;
   background-image: url(../../../i/img/bg-500.png);
+  background-size: cover;
 
   &_title {
-    font-size: 35px;
-    line-height: 35px;
-    max-width: 290px;
+    // font-size: 43px;
+    // line-height: 43px;
+    // max-width: 290px;
   }
 }

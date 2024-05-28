@@ -2,6 +2,12 @@
   width: 90%;
   max-width: 800px;
 
+  &_title {
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 30px;
+  }
+
   &_pack {
     &_block {
       width: 370px;

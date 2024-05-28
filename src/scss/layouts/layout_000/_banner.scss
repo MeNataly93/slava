@@ -31,14 +31,14 @@
 
   &_title {
     color: white;
-    font-size: 32px;
+    font-size: 43px;
     font-family: $wowFontFamily;
     font-weight: 700;
-    line-height: 32px;
+    line-height: 43px;
     margin: 0 0 40px 0;
     text-align: center;
-    text-transform: uppercase;
-    max-width: 250px;
+    // text-transform: uppercase;
+    max-width: 300px;
   }
 
   &_button {
@@ -58,13 +58,14 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    font-family: $wowFontFamily;
+    font-family: $mainFontFamily;
     letter-spacing: 2px;
     color: #fff;
     text-transform: uppercase;
     cursor: pointer;
     text-decoration: none;
     font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
   }
 
   &_text {

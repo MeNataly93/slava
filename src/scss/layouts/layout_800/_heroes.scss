@@ -1,7 +1,9 @@
 .heroes {
   &_title {
+    width: 80%;
     &_name {
-      font-size: 32px;
+      font-size: 45px;
+      line-height: 45px;
     }
     &_text1 {
       margin-bottom: 20px;

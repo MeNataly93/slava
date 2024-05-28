@@ -5,12 +5,13 @@
     margin-left: auto;
     margin-right: auto;
     &_name {
-      font-size: 20px;
-      line-height: 24px;
+      font-size: 28px;
+      line-height: 28px;
       text-align: center;
       letter-spacing: 1.2px;
-      font-weight: 900;
+      font-weight: 800;
       font-family: $wowFontFamily;
+      color: #3a3a3a;
     }
     &_text1 {
       display: block;
@@ -19,7 +20,7 @@
       font-size: 14px;
       line-height: 18px;
       text-transform: uppercase;
-      letter-spacing: 1.8px;
+      letter-spacing: 1px;
       color: #f1419c;
       font-family: $mainFontFamily;
       margin-bottom: 65px;
@@ -86,7 +87,7 @@
         display: block;
         text-transform: uppercase;
         border: none;
-        font-family: $wowFontFamily;
+        font-family: $mainFontFamily;
         letter-spacing: 1px;
         text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
         padding: 16px;
@@ -95,9 +96,11 @@
         margin: 0 auto;
         width: 185px;
         text-decoration: none;
-        color: #004b91;
+        // color: #004b91;
+        color: #fff;
+
         cursor: pointer;
-        font-weight: 900;
+        font-weight: 700;
         margin-left: auto;
         margin-right: auto;
       }
