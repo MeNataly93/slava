@@ -1,0 +1,42 @@
+.where {
+  width: 85%;
+  max-width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+
+  &_title {
+    font-size: 28px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 1.2px;
+    font-weight: 800;
+    font-family: $wowFontFamily;
+    color: #3a3a3a;
+  }
+
+  &_list {
+    list-style-type: none;
+    padding-inline-start: 0;
+    padding-top: 60px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+
+    &_item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      font-family: $mainFontFamily;
+      color: #3a3a3a;
+      font-size: 18px;
+      line-height: 1.2;
+      &_img {
+        width: 80px;
+        margin-right: 20px;
+        margin-left: 10px;
+      }
+    }
+  }
+}

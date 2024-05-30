@@ -155,7 +155,7 @@
   }
 
   &_extra {
-    background-color: #fe8b05;
+    // background-color: #fe8b05;
     border-radius: 40px;
     padding: 20px 32px 40px;
     box-shadow: 0 4px 250px rgba(0, 0, 0, 0.25);
@@ -163,7 +163,7 @@
 
     &_title {
       font-family: $wowFontFamily;
-      color: #fff;
+      color: #3a3a3a;
       font-weight: bold;
       font-size: 22px;
       line-height: 28px;
@@ -175,7 +175,7 @@
 
     &_list {
       font-family: $mainFontFamily;
-      color: #fff;
+      color: #3a3a3a;
       font-size: 18px;
       line-height: 50px;
 
