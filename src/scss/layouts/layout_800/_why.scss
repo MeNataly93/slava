@@ -1,0 +1,10 @@
+.why {
+  &_list {
+    width: 600px;
+    max-width: 600px;
+
+    &_item {
+      padding: 30px 120px;
+    }
+  }
+}
