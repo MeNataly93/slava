@@ -1,20 +1,26 @@
 .show {
-  // width: 90%;
+  width: 80%;
+  max-width: 1800px;
   background-image: url(../../../i/img/show-bg-l.jpg);
 
   &_title {
+    text-align: right;
     margin-right: 120px;
     font-size: 70px;
 
     &_sec {
+      text-align: right;
       margin-right: 120px;
+      font-size: 30px;
+      color: #3a3a3a;
     }
   }
 
   &_main-text {
     margin-right: 120px;
+    color: #f9e853;
   }
   &_vent-snart {
-    margin-right: 120px;
+    margin-right: 95px;
   }
 }

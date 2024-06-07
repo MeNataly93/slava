@@ -1,19 +1,21 @@
 .show {
-  // width: 90%;
-  width: 100%;
+  position: relative;
+  width: 90%;
+  max-width: 470px;
+  line-height: 0;
 
   background-image: url(../../../i/img/show-bg-s.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
   background-position-y: bottom;
-  // border-radius: 40px;
+  border-radius: 40px;
 
   margin-left: auto;
   margin-right: auto;
-  margin-top: 80px;
+  margin-top: 150px;
   margin-bottom: 60px;
-  padding-bottom: 285px;
+  padding-bottom: 250px;
 
   &_title {
     font-size: 38px;
@@ -22,7 +24,7 @@
     letter-spacing: 1.2px;
     font-weight: 800;
     font-family: $wowFontFamily;
-    color: #ffca6c;
+    color: #f9e853;
     padding-top: 95px;
 
     &_sec {
@@ -39,7 +41,9 @@
     line-height: 1.2;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #ffffff;
+    color: #f9e853;
+    font-weight: 600;
+
     font-family: $mainFontFamily;
     margin-top: 65px;
     margin-bottom: 55px;
@@ -63,4 +67,12 @@
     margin-right: auto;
     border-radius: 1000px;
   }
+}
+
+.show_wave1 {
+  width: 100%;
+}
+.show_wave2 {
+  width: 100%;
+  bottom: 0;
 }

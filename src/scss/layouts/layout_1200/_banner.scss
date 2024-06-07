@@ -6,6 +6,7 @@
   padding-top: 35px;
   min-height: 515px;
   background-image: url(../../../i/img/bg-1200.png);
+  background-position-y: top;
 
   &_main {
     width: 500px;
@@ -16,7 +17,7 @@
   &_title {
     text-align: left;
     max-width: 350px;
-    margin-top: 75px;
+    margin-top: 95px;
     font-size: 60px;
     line-height: 60px;
   }

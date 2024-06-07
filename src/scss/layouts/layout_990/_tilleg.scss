@@ -11,6 +11,7 @@
       ". tsn tsn te te .";
     column-gap: 20px;
     row-gap: 20px;
+    width: 1fr;
 
     &_frame {
       padding: 0;
@@ -42,4 +43,8 @@
 }
 .te {
   grid-area: te;
+}
+
+.tilleg_item-bg_6 {
+  font-size: 15px;
 }

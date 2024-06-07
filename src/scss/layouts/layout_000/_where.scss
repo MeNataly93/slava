@@ -4,7 +4,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  margin-top: 20px;
 
   &_title {
     font-size: 28px;
@@ -23,7 +23,7 @@
     width: max-content;
     margin-left: auto;
     margin-right: auto;
-
+    justify-content: center;
     &_item {
       display: flex;
       align-items: center;
@@ -32,6 +32,7 @@
       color: #3a3a3a;
       font-size: 18px;
       line-height: 1.2;
+      max-width: 350px;
       &_img {
         width: 80px;
         margin-right: 20px;
@@ -39,4 +40,19 @@
       }
     }
   }
+}
+
+.where-block {
+  border: dashed #a9cd39;
+  border-radius: 40px;
+  padding: 30px 0px;
+  width: 90%;
+  max-width: 470px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+
+.for-image {
+  display: none;
 }
