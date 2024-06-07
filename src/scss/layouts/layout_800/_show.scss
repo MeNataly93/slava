@@ -1,22 +1,28 @@
 .show {
-  width: 100%;
-  max-width: 575px;
+  // width: 80%;
+  background-image: url(../../../i/img/show-bg-m.jpg);
+  background-position-x: left;
+  padding-bottom: 45px;
   &_title {
-  }
-  &_txt {
-    max-width: 50%;
-  }
-  &_list {
-    width: 100%;
-    // max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    &_block {
-      width: 100%;
+    text-align: right;
+    margin-right: 50px;
+    padding-top: 65px;
+    &_sec {
+      text-align: right;
+      padding-top: 8px;
+      margin-right: 50px;
     }
   }
-}
+  &_main-text {
+    text-align: right;
+    width: 270px;
+    margin-right: 50px;
+    color: #ffca6c;
+  }
 
-.bg {
-  // max-width: 800px;
+  &_vent-snart {
+    margin-right: 50px;
+
+    background: #f54ea4;
+  }
 }

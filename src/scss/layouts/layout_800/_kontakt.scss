@@ -1,7 +1,10 @@
 .kontakt {
+  width: 100%;
+
   &_block {
     width: 80%;
-    max-width: 642px;
+
+    // max-width: 1000px;
 
     margin-left: auto;
     margin-right: auto;
@@ -17,7 +20,7 @@
       padding: 50px 0 35px;
       font-size: 45px;
       font-weight: bold;
-      color: #3a3a3a;
+      color: #ffffff;
       &_gratis {
         font-size: 24px;
         padding: 10px;
@@ -46,20 +49,20 @@
   text-align: center;
   line-height: 1.2;
   padding: 20px 0;
-  color: #3a3a3a;
+  color: #ffffff;
   letter-spacing: 1.2px;
   font-family: $wowFontFamily;
   //   margin-top: 25px;
 }
 .second-txt {
   display: block;
-  color: #f1419c;
+  color: #c1f285;
   font-size: 14px;
   line-height: 14px;
   font-family: $mainFontFamily;
   text-transform: uppercase;
   text-align: center;
-  width: 85%;
+  width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;

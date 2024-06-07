@@ -1,0 +1,22 @@
+.show {
+  // width: 90%;
+  &_title {
+    margin-right: 180px;
+    font-size: 90px;
+
+    &_sec {
+      font-size: 35px;
+      margin-right: 180px;
+    }
+  }
+
+  &_main-text {
+    font-size: 18px;
+    width: 345px;
+    margin-right: 180px;
+  }
+  &_vent-snart {
+    margin-right: 180px;
+    width: 360px;
+  }
+}
