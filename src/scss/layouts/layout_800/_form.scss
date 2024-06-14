@@ -1,0 +1,13 @@
+.form {
+  width: 80%;
+  max-width: 786px;
+  display: block;
+
+  &_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 280px;
+  }
+}
