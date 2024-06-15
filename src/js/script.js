@@ -18,6 +18,33 @@ function scrollTo() {
   arrow.style.display = "none";
 }
 
+// --MAIN SLIDER
+
+const settings = {
+  arrows: false,
+  autoplay: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplaySpeed: 5000,
+  infinity: true,
+  speed: 2000,
+  dots: true,
+  appendDots: ".mydots",
+  dotsClass: "dots-box",
+  responsive: [
+    { breakpoint: 1200, settings: { slidesToShow: 2 } },
+    { breakpoint: 990, settings: { slidesToShow: 1 } },
+  ],
+};
+
+$("#slider-main").slick(settings);
+
+// --FANCY BOX
+Fancybox.bind("[data-fancybox]", {
+  Toolbar: false,
+  Thumbs: false,
+});
+
 // ----------------------------------------------------------------------------------------------
 
 // --SHADOW FOR NAV IN SCROLL
@@ -260,33 +287,6 @@ $(document).mouseover(function (e) {
 //   fade: true,
 //   speed: 2000,
 // });
-
-// --MAIN SLIDER
-
-const settings = {
-  arrows: false,
-  autoplay: true,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplaySpeed: 5000,
-  infinity: true,
-  speed: 2000,
-  dots: true,
-  appendDots: ".mydots",
-  dotsClass: "dots-box",
-  responsive: [
-    { breakpoint: 1200, settings: { slidesToShow: 2 } },
-    { breakpoint: 990, settings: { slidesToShow: 1 } },
-  ],
-};
-
-$("#slider-main").slick(settings);
-
-// --FANCY BOX
-Fancybox.bind("[data-fancybox]", {
-  Toolbar: false,
-  Thumbs: false,
-});
 
 // --COUNTER
 
