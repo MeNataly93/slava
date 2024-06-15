@@ -1,0 +1,10 @@
+.gallery {
+  width: 80%;
+  max-width: 786px;
+
+  &__title {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,3 +1,25 @@
+// --ARROW SCROLL
+// -Visible or not
+const arrow = document.getElementById("arrow");
+function arrowNone() {
+  let scrollHeight = window.pageYOffset;
+  arrow.style.display = "block";
+  if (scrollHeight < 460) {
+    arrow.style.display = "none";
+  }
+}
+setInterval(arrowNone, 1);
+// -Scroll to which element due to media query
+const mediaQuery = window.matchMedia("(min-width: 990px)");
+function scrollTo() {
+  if (mediaQuery.matches) {
+    arrow.href = "#header";
+  } else arrow.href = "#";
+  arrow.style.display = "none";
+}
+
+// ----------------------------------------------------------------------------------------------
+
 // --SHADOW FOR NAV IN SCROLL
 
 const nav = document.getElementById("nav");
@@ -14,25 +36,6 @@ document.onscroll = function navStyleScroll() {
     nav.style.boxShadow = "none";
   }
 };
-
-// --ARROW SCROLL
-// -Visible or not
-const arrow = document.getElementById("arrow");
-function arrowNone() {
-  let scrollHeight = window.pageYOffset;
-  arrow.style.display = "block";
-  if (scrollHeight < 460) {
-    arrow.style.display = "none";
-  }
-}
-setInterval(arrowNone, 1);
-// -Scroll to which element due to media query
-const mediaQuery = window.matchMedia("(min-width: 990px)");
-function scrollTo() {
-  if (mediaQuery.matches) {
-    arrow.href = "#header-container";
-  } else arrow.href = "#";
-}
 
 // --MENU-BUTTON and MOBILE MENU
 // -Button
@@ -246,24 +249,24 @@ $(document).mouseover(function (e) {
   resetDesctopMenu();
 });
 
-// --SLIDER IN TITLE
-$("#slider").slick({
-  arrows: false,
-  autoplay: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplaySpeed: 5000,
-  infinity: true,
-  fade: true,
-  speed: 2000,
-});
+// // --SLIDER IN TITLE
+// $("#slider").slick({
+//   arrows: false,
+//   autoplay: true,
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   autoplaySpeed: 5000,
+//   infinity: true,
+//   fade: true,
+//   speed: 2000,
+// });
 
 // --MAIN SLIDER
 
 const settings = {
   arrows: false,
   autoplay: true,
-  slidesToShow: 6,
+  slidesToShow: 3,
   slidesToScroll: 1,
   autoplaySpeed: 5000,
   infinity: true,
@@ -272,8 +275,8 @@ const settings = {
   appendDots: ".mydots",
   dotsClass: "dots-box",
   responsive: [
-    { breakpoint: 1600, settings: { slidesToShow: 4 } },
-    { breakpoint: 990, settings: { slidesToShow: 3 } },
+    { breakpoint: 1200, settings: { slidesToShow: 2 } },
+    { breakpoint: 990, settings: { slidesToShow: 1 } },
   ],
 };
 

@@ -16,7 +16,7 @@
 
   <!-- --HEADER -->
   <header>
-    <div class="header">
+    <div class="header" id="header">
       <div class="header_menu-block"><a href="#" class="header_logo"><img class="header_logo_img"
             src="./i/img/logo-removebg.png" alt="logo"></a>
         <a href="" class="header_menu"><img class="header_menu_img" src="./i/img/menu.png" alt="menu"></a>
@@ -391,9 +391,57 @@
 
       <div><img class="form_img" src="i/img/form-phone.png" alt="tlf"></div>
     </div>
+
   </div>
 
 
+  <!-- --GALLERY -->
+
+
+  <section class="gallery">
+
+    <h2 class="gallery__title">Se hvor brennende det er
+      ferien vår går over</h2>
+    <div class="container">
+      <div id="slider-main" class="gallery__slider slider">
+        <div class="slider__item gallery__slider__img" data-fancybox="gallery" data-src="./i/img/party/1.jpg">
+          <img class="slider__img gallery__slider__img_root" src="./i/img/party/1.jpg">
+        </div>
+        <div class="slider__item gallery__slider__img" data-fancybox="gallery" data-src="./i/img/party/2.jpg">
+
+          <img class="slider__img gallery__slider__img_root" src="./i/img/party/2.jpg">
+        </div>
+        <div class="slider__item gallery__slider__img" data-fancybox="gallery" data-src="./i/img/party/3.jpg">
+          <img class="slider__img gallery__slider__img_root" src="./i/img/party/3.jpg">
+        </div>
+        <div class="slider__item gallery__slider__img" data-fancybox="gallery" data-src="./i/img/party/4.jpg.jpg">
+          <img class="slider__img gallery__slider__img_root" src="./i/img/party/4.jpg">
+        </div>
+        <div class="slider__item gallery__slider__img" data-fancybox="gallery" data-src="./i/img/party/5.jpg.jpg">
+          <img class="slider__img gallery__slider__img_root" src="./i/img/party/5.jpg">
+        </div>
+        <div class="slider__item gallery__slider__img" data-fancybox="gallery" data-src="./i/img/party/6.jpg.jpg">
+          <img class="slider__img gallery__slider__img_root" src="./i/img/party/6.jpg">
+        </div>
+
+
+      </div>
+    </div>
+    <!-- -Dots -->
+    <div class="mydots"></div>
+    </div>
+  </section>
+
+
+  <!-- --ARROW (SCROLL) -->
+  <a class="arrow" id="arrow" href="#header"><img class="arrow-scroll" src="./i/img/arrow-scroll.png" alt="arrow"></a>
+
+
+
+  <script src="./js/jquery-3.6.1.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="./js/script.js"></script>
 
   <!-- 
   <header class="header-container" id="header-container">
@@ -1158,54 +1206,7 @@
   </section>
 
 
-  <!-- --GALLERY -->
 
-
-  <section class="gallery">
-    <p class="gallery__intro">Gallery</p>
-    <h2 class="gallery__title">Our photos</h2>
-    <div class="container">
-      <div id="slider-main" class="gallery__slider slider">
-        <div class="slider__item gallery__slider__img" data-fancybox="gallery"
-          data-src="./i/img/gallery/gallery_01.jpg">
-          <img class="slider__img gallery__slider__img_root" src="./i/img/gallery/gallery_01.jpg">
-        </div>
-        <div class="slider__item gallery__slider__img" data-fancybox="gallery"
-          data-src="./i/img/gallery/gallery_02.jpg">
-
-          <img class="slider__img gallery__slider__img_root" src="./i/img/gallery/gallery_02.jpg">
-        </div>
-        <div class="slider__item gallery__slider__img" data-fancybox="gallery"
-          data-src="./i/img/gallery/gallery_03.jpg">
-          <img class="slider__img gallery__slider__img_root" src="./i/img/gallery/gallery_03.jpg">
-        </div>
-        <div class="slider__item gallery__slider__img" data-fancybox="gallery"
-          data-src="./i/img/gallery/gallery_04.jpg">
-          <img class="slider__img gallery__slider__img_root" src="./i/img/gallery/gallery_04.jpg">
-        </div>
-        <div class="slider__item gallery__slider__img" data-fancybox="gallery"
-          data-src="./i/img/gallery/gallery_05.jpg">
-          <img class="slider__img gallery__slider__img_root" src="./i/img/gallery/gallery_05.jpg">
-        </div>
-        <div class="slider__item gallery__slider__img" data-fancybox="gallery"
-          data-src="./i/img/gallery/gallery_06.jpg">
-          <img class="slider__img gallery__slider__img_root" src="./i/img/gallery/gallery_06.jpg">
-        </div>
-        <div class="slider__item gallery__slider__img" data-fancybox="gallery"
-          data-src="./i/img/gallery/gallery_07.jpg">
-          <img class="slider__img gallery__slider__img_root" src="./i/img/gallery/gallery_07.jpg">
-        </div>
-        <div class="slider__item gallery__slider__img" data-fancybox="gallery"
-          data-src="./i/img/gallery/gallery_08.jpg">
-          <img class="slider__img gallery__slider__img_root" src="./i/img/gallery/gallery_08.jpg">
-        </div>
-
-      </div>
-    </div>
-    <!-- -Dots -->
-    <div class="mydots"></div>
-    </div>
-  </section>
 
 
   <!-- --SIGNUP -->
@@ -1351,16 +1352,9 @@
       </section>
   </section>
 
-  <!-- -ARROW (SCROLL) -->
-  <a class="arrow" id="arrow" href="#header-container"><img class="arrow__img" src="./i/img/right-arrow-white.png"
-      alt="arrow"></a>
+  <!-- ВАЖНОЕ -->
 
 
-
-  <script src="./js/jquery-3.6.1.min.js"></script>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-  <script src="./js/script.js"></script>
 
 
 
