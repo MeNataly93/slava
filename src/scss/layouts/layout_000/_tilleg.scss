@@ -60,4 +60,60 @@
     width: 100%;
     border-radius: 0 0 40px 40px;
   }
+
+  &_item-description {
+    display: none;
+  }
+}
+
+.tilleg-help-block {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  border-radius: 0 0 40px 40px;
+}
+
+// --ПРИ НАВЕДЕНИИ НА БЛОК
+
+.tf:hover .tilleg_item-img {
+  visibility: hidden;
+}
+.tf:hover .tilleg-help-block {
+  background-image: url(/i/img/kids.jpg);
+  background-size: cover;
+  background-position: top;
+  background-color: rgba(58, 58, 58, 0.95);
+  background-blend-mode: overlay;
+
+  margin-top: auto;
+  margin-bottom: auto;
+  transition: 1s;
+
+  .tilleg_item-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    font-size: 16px;
+
+    line-height: 1.2;
+    padding: 40px;
+    color: white;
+    font-weight: 500;
+    font-family: $wowFontFamily;
+    z-index: 2000;
+  }
+
+  .tilleg_item-description_price {
+    background-color: #ff0650;
+    margin-top: 40px;
+    border-radius: 40px;
+    text-align: center;
+    width: fit-content;
+    padding: 10px 30px;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
