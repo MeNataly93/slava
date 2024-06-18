@@ -23,14 +23,19 @@
 
 .tilleg_list_frame:hover .tilleg-help-block {
   .tilleg_item-description {
-    font-size: 10px;
+    font-size: 12px;
+    padding: 20px 30px;
+
     &_price {
-      font-size: 10px;
-      width: 80%;
+      font-size: 12px;
+      width: 95%;
+      max-width: 95%;
+      margin-top: 10px;
 
       &_second {
-        font-size: 10px;
-        width: 80%;
+        font-size: 12px;
+        width: 95%;
+        max-width: 95%;
       }
     }
   }
