@@ -9,3 +9,20 @@
     line-height: 45px;
   }
 }
+
+.tilleg_list_frame:hover .tilleg-help-block {
+  .tilleg_item-description {
+    font-size: 2vw;
+    &_price {
+      font-size: 2vw;
+      width: fit-content;
+      max-width: 90%;
+
+      &_second {
+        font-size: 2vw;
+        width: fit-content;
+        max-width: 90%;
+      }
+    }
+  }
+}

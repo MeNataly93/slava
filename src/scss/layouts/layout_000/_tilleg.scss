@@ -1,4 +1,7 @@
 .tilleg {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   &_title {
     // margin-bottom: 1.5em;
     padding-bottom: 39px;
@@ -54,6 +57,15 @@
     &_8 {
       background: #ffc226;
     }
+    &_9 {
+      background: #84c916;
+    }
+    &_10 {
+      background: #26ccff;
+    }
+    &_11 {
+      background: #e92b9a;
+    }
   }
 
   &_item-img {
@@ -75,10 +87,10 @@
 
 // --ПРИ НАВЕДЕНИИ НА БЛОК
 
-.tf:hover .tilleg_item-img {
+.tilleg_list_frame:hover .tilleg_item-img {
   visibility: hidden;
 }
-.tf:hover .tilleg-help-block {
+.tilleg_list_frame:hover .tilleg-help-block {
   background-image: url(/i/img/kids.jpg);
   background-size: cover;
   background-position: top;
@@ -87,7 +99,6 @@
 
   margin-top: auto;
   margin-bottom: auto;
-  transition: 1s;
 
   .tilleg_item-description {
     position: absolute;
@@ -95,10 +106,10 @@
     left: 0;
     width: 100%;
     display: block;
-    font-size: 16px;
+    font-size: 10px;
 
     line-height: 1.2;
-    padding: 40px;
+    padding: 20px;
     color: white;
     font-weight: 500;
     font-family: $wowFontFamily;
@@ -107,13 +118,29 @@
 
   .tilleg_item-description_price {
     background-color: #ff0650;
-    margin-top: 40px;
+    margin-top: 20px;
     border-radius: 40px;
     text-align: center;
     width: fit-content;
     padding: 10px 30px;
-    font-size: 18px;
+    font-size: 10px;
     margin-left: auto;
     margin-right: auto;
+    width: fit-content;
+    max-width: 90%;
+
+    &_second {
+      background-color: #33b31a;
+      margin-top: 10px;
+      border-radius: 40px;
+      text-align: center;
+      width: fit-content;
+      padding: 10px 30px;
+      font-size: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      width: fit-content;
+      max-width: 90%;
+    }
   }
 }

@@ -20,3 +20,18 @@
     justify-content: center;
   }
 }
+
+.tilleg_list_frame:hover .tilleg-help-block {
+  .tilleg_item-description {
+    font-size: 10px;
+    &_price {
+      font-size: 10px;
+      width: 80%;
+
+      &_second {
+        font-size: 10px;
+        width: 80%;
+      }
+    }
+  }
+}
