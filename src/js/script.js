@@ -45,31 +45,45 @@ Fancybox.bind("[data-fancybox]", {
   Thumbs: false,
 });
 
-// --Услуги - всплывающее описание в мобильной версии
-
-// -Вариант, который работает только с первым блоком
-// const block = $(".tilleg-help-block");
-// const parent = document.querySelector(".tilleg-help-block");
-// const img = parent.querySelector(".tilleg_item-img");
-// const text = parent.querySelector(".tilleg_item-description");
-// block.on("click", function (e) {
-//   console.log("hi");
-//   if ($(e.target)) {
-//     img.style.visibility = "hidden";
-//     text.style.visibility = "visible";
-//   }
-// });
-
-// -Другие попытки
+// --Услуги - описание в мобильной версии появляется при клике, действует до расширения 1200 пикс (далее - работа ховера в css)
 
 const parents = document.querySelectorAll(".tilleg-help-block");
 
-parents.forEach((parent) => {
-  parent.addEventListener("click", function (e) {
-    // console.log("hi");
-    const img = parent.querySelector(".tilleg_item-img");
+function handleParentClick(event) {
+  const parent = event.currentTarget;
 
-    const text = parent.querySelector(".tilleg_item-description");
+  const img = parent.querySelector(".tilleg_item-img");
+  const text = parent.querySelector(".tilleg_item-description");
+
+  // Сбрасываем стили всех .tilleg-help-block
+  parents.forEach((element) => {
+    const elementImg = element.querySelector(".tilleg_item-img");
+    const elementText = element.querySelector(".tilleg_item-description");
+
+    if (elementImg) {
+      elementImg.style.visibility = "visible";
+    }
+
+    if (elementText) {
+      elementText.style.visibility = "hidden";
+    }
+  });
+
+  // Устанавливаем стили у текущего кликнутого элемента
+  if (img) {
+    img.style.visibility = "hidden";
+  }
+
+  if (text) {
+    text.style.visibility = "visible";
+  }
+}
+
+function handleHoverOnListFrame() {
+  // Проверяем ширину окна
+  if (window.innerWidth >= 1200) {
+    const img = this.querySelector(".tilleg_item-img");
+    const text = this.querySelector(".tilleg_item-description");
 
     if (img) {
       img.style.visibility = "hidden";
@@ -78,8 +92,64 @@ parents.forEach((parent) => {
     if (text) {
       text.style.visibility = "visible";
     }
-  });
-});
+  }
+}
+
+function handleHoverOffListFrame() {
+  // Проверяем ширину окна
+  if (window.innerWidth >= 1200) {
+    const img = this.querySelector(".tilleg_item-img");
+    const text = this.querySelector(".tilleg_item-description");
+
+    if (img) {
+      img.style.visibility = "visible";
+    }
+
+    if (text) {
+      text.style.visibility = "hidden";
+    }
+  }
+}
+
+function updateEventListeners() {
+  if (window.innerWidth <= 1200) {
+    parents.forEach((parent) => {
+      parent.addEventListener("click", handleParentClick);
+    });
+  } else {
+    parents.forEach((parent) => {
+      parent.removeEventListener("click", handleParentClick);
+    });
+
+    // Сбрасываем стили всех .tilleg-help-block при переходе на 1200 пикселей и более
+    parents.forEach((element) => {
+      const elementImg = element.querySelector(".tilleg_item-img");
+      const elementText = element.querySelector(".tilleg_item-description");
+
+      if (elementImg) {
+        elementImg.style.visibility = "visible";
+      }
+
+      if (elementText) {
+        elementText.style.visibility = "hidden";
+      }
+    });
+
+    // Добавляем обработчики ховера на .tilleg_list_frame только для 1200 пикселей и более
+    const listFrames = document.querySelectorAll(".tilleg_list_frame");
+    listFrames.forEach((frame) => {
+      frame.addEventListener("mouseenter", handleHoverOnListFrame);
+      frame.addEventListener("mouseleave", handleHoverOffListFrame);
+    });
+  }
+}
+
+// Добавляем обработчики событий при загрузке страницы и изменении размера окна
+window.addEventListener("load", updateEventListeners);
+window.addEventListener("resize", updateEventListeners);
+
+// Вызываем обновление обработчиков сразу после загрузки скрипта
+updateEventListeners();
 
 // ----------------------------------------------------------------------------------------------
 
