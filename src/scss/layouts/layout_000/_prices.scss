@@ -16,6 +16,17 @@
     letter-spacing: 1.2px;
     font-family: $wowFontFamily;
   }
+
+  &_description {
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #f1419c;
+    font-family: $mainFontFamily;
+    margin-bottom: 40px;
+  }
   &_pack {
     list-style-type: none;
     padding-inline-start: 0;
