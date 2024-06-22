@@ -1,0 +1,12 @@
+.feedback {
+  width: 80%;
+  max-width: 786px;
+  &_text {
+    width: 450px;
+    max-width: 450px;
+  }
+
+  &_img {
+    width: 60%;
+  }
+}

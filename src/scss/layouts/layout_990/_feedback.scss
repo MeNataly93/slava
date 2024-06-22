@@ -1,0 +1,13 @@
+.feedback {
+  &_title {
+    font-size: 45px;
+    line-height: 1.2;
+  }
+  &_text {
+    font-size: 35px;
+    line-height: 1.2;
+    padding: 100px 0 40px;
+    width: 480px;
+    max-width: 480px;
+  }
+}
