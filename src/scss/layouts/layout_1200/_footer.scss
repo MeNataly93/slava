@@ -1,155 +1,65 @@
 .footer {
-  margin: 0;
-  padding-top: 40px;
-
-  &__section-2,
-  &__section-3 {
-    display: block;
-  }
-
-  &__main-section {
+  &_inn {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 10px;
-    margin: 0 auto;
-    padding-bottom: 34px;
-    width: 1180px;
-    max-width: 1180px;
-  }
-  &__company {
-    line-height: 1em;
-    margin: 0 0 24px;
-    font-size: 22px;
-    font-weight: 400;
-    font-family: $titleFontFamily;
-    color: $dark-grey;
-    padding-top: 25px;
 
-    &__list {
-      list-style-type: none;
-      padding-inline-start: 0;
-      display: grid;
-      grid-template-columns: 1fr 1.5fr;
-
-      &__item {
-        padding: 4px 0;
-
-        color: $dark-grey;
-
-        &__span {
-          cursor: pointer;
-        }
-
-        &_current {
-          color: $main;
-          font-weight: 600;
-        }
-      }
-    }
+    grid-template-areas:
+      "logo soc"
+      "txt tlf";
   }
 
-  &__galleries {
-    line-height: 1em;
-    margin: 0 0 24px;
-    font-size: 22px;
-    font-weight: 400;
-    font-family: $titleFontFamily;
-    color: $dark-grey;
-    padding-top: 25px;
-
-    &__slider {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 12px;
-      max-width: 276px;
-      padding: 6px;
-
-      &__img {
-        width: 60px;
-        max-width: 60px;
-        border-radius: 8px;
-        height: 52px;
-        background-size: 100% 100%;
-
-        &_1 {
-          background-image: url(../i/img/gallery/gallery_01.jpg);
-          transition: 0.4s;
-          &:hover {
-            transform: scale(1.2);
-          }
-        }
-        &_2 {
-          background-image: url(../i/img/gallery/gallery_02.jpg);
-          transition: 0.4s;
-          &:hover {
-            transform: scale(1.2);
-          }
-        }
-        &_3 {
-          background-image: url(../i/img/gallery/gallery_03.jpg);
-          transition: 0.4s;
-          &:hover {
-            transform: scale(1.2);
-          }
-        }
-        &_4 {
-          background-image: url(../i/img/gallery/gallery_04.jpg);
-          transition: 0.4s;
-          &:hover {
-            transform: scale(1.2);
-          }
-        }
-        &_5 {
-          background-image: url(../i/img/gallery/gallery_05.jpg);
-          transition: 0.4s;
-          &:hover {
-            transform: scale(1.2);
-          }
-        }
-        &_6 {
-          background-image: url(../i/img/gallery/gallery_06.jpg);
-          transition: 0.4s;
-          &:hover {
-            transform: scale(1.2);
-          }
-        }
-        &_7 {
-          background-image: url(../i/img/gallery/gallery_07.jpg);
-          transition: 0.4s;
-          &:hover {
-            transform: scale(1.2);
-          }
-        }
-        &_8 {
-          background-image: url(../i/img/gallery/gallery_08.jpg);
-          transition: 0.4s;
-          &:hover {
-            transform: scale(1.2);
-          }
-        }
-      }
-    }
+  &_logo {
+    grid-area: logo;
   }
 
-  &__section-1 {
+  &_main-text {
+    grid-area: txt;
     text-align: left;
+    font-size: 13px;
+
+    width: 50%;
   }
-  &__text {
-    max-width: 250px;
-    margin-left: 0;
-  }
-  &__phone-section {
-    justify-content: start;
+  &_div-1200 {
+    grid-area: soc;
+
+    display: grid;
+    gap: 10px;
+    text-align: right;
+    margin-top: 20px;
+    grid-template-areas: "logotext smlogo";
   }
 
-  &__logo__img {
-    margin-bottom: 29px;
+  &_sosial-media {
+    gap: 10px;
+    grid-area: smlogo;
   }
 
-  &__section-2 {
-    text-align: left;
+  &_sec-text {
+    display: block;
+    color: white;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+    grid-area: logotext;
   }
-  &__section-3 {
-    text-align: left;
+
+  &_location {
+    display: block;
+    color: white;
+    color: white;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    border-top: 1px ridge white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  &_tlf {
+    font-size: 30px;
+    grid-area: tlf;
+    text-align: right;
   }
 }
