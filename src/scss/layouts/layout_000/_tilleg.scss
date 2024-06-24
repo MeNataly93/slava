@@ -2,6 +2,22 @@
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+
+  &_texthelp {
+    display: block;
+    text-align: center;
+    padding: 20px 0 34px;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #f1419c;
+    font-family: $mainFontFamily;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   &_title {
     // margin-bottom: 1.5em;
     padding-bottom: 39px;

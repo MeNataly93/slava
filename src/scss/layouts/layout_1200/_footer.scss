@@ -1,10 +1,12 @@
 .footer {
   &_inn {
     display: grid;
-
+    max-width: 1200px;
     grid-template-areas:
-      "logo soc"
-      "txt tlf";
+      "logo txt soc"
+      "logo txt tlf";
+    padding-bottom: 20px;
+    column-gap: 20px;
   }
 
   &_logo {
@@ -13,43 +15,48 @@
 
   &_main-text {
     grid-area: txt;
-    text-align: left;
-    font-size: 13px;
+    font-size: 15px;
 
-    width: 50%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
   }
-  &_div-1200 {
+  &_div1200 {
     grid-area: soc;
 
     display: grid;
-    gap: 10px;
     text-align: right;
     margin-top: 20px;
     grid-template-areas: "logotext smlogo";
+    margin-right: 0;
+    grid-template-rows: 3fr 1fr;
+    column-gap: 10px;
   }
 
   &_sosial-media {
-    gap: 10px;
     grid-area: smlogo;
+    justify-content: end;
+    gap: 10px;
+    width: fit-content;
+    text-align: right;
   }
 
   &_sec-text {
     display: block;
-    color: white;
+    color: #3a3a3a;
     font-size: 16px;
     line-height: 1;
-    text-align: center;
+    text-align: right;
     grid-area: logotext;
   }
 
   &_location {
     display: block;
-    color: white;
-    color: white;
-    font-size: 16px;
+    color: #3a3a3a;
+    font-size: 15px;
     line-height: 1.2;
     text-align: center;
-    border-top: 1px ridge white;
+    border-top: 1px ridge #3a3a3a;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -58,8 +65,9 @@
   }
 
   &_tlf {
-    font-size: 30px;
+    font-size: 23px;
     grid-area: tlf;
     text-align: right;
+    margin-top: 0;
   }
 }

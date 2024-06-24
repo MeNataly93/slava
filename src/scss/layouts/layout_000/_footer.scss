@@ -1,6 +1,7 @@
 .footer {
   margin-top: 40px;
-  background-color: black;
+  background-color: #f0ecec;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 
   &_inn {
     width: 90%;
@@ -33,10 +34,11 @@
     justify-content: space-evenly;
     list-style-type: none;
     padding-inline-start: 0;
+    column-gap: 10px;
   }
 
   &_tlf {
-    color: white;
+    color: #3a3a3a;
     font-size: 18px;
     font-family: $wowFontFamily;
     font-weight: bold;

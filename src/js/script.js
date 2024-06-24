@@ -8,15 +8,33 @@ function arrowNone() {
     arrow.style.display = "none";
   }
 }
-setInterval(arrowNone, 1);
-// -Scroll to which element due to media query
+// setInterval(arrowNone, 1);
+// // -Scroll to which element due to media query
+// const mediaQuery = window.matchMedia("(min-width: 990px)");
+// function scrollTo() {
+//   if (mediaQuery.matches) {
+//     console.log("ggg");
+//     arrow.href = "#top";
+//   } else arrow.href = "#";
+//   arrow.style.display = "none";
+// }
+
+const header = document.querySelector("header");
+const headerHeight = header.offsetHeight;
 const mediaQuery = window.matchMedia("(min-width: 990px)");
-function scrollTo() {
+
+function scrollToTop() {
   if (mediaQuery.matches) {
-    arrow.href = "#header";
-  } else arrow.href = "#";
-  arrow.style.display = "none";
+    arrow.href = "#top";
+  } else {
+    arrow.href = "#";
+    arrow.style.display = "none";
+    console.log("dfdfd");
+  }
 }
+
+window.addEventListener("scroll", arrowNone);
+window.addEventListener("resize", scrollToTop);
 
 // --MAIN SLIDER
 
@@ -150,6 +168,20 @@ window.addEventListener("resize", updateEventListeners);
 
 // Вызываем обновление обработчиков сразу после загрузки скрипта
 updateEventListeners();
+
+// --Фиксированный хедер
+document.addEventListener("DOMContentLoaded", function () {
+  var header = document.getElementById("header");
+  var headerHeight = header.offsetHeight;
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > headerHeight) {
+      header.classList.add("fixed-header");
+    } else {
+      header.classList.remove("fixed-header");
+    }
+  });
+});
 
 // ----------------------------------------------------------------------------------------------
 

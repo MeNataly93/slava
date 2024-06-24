@@ -1,15 +1,17 @@
 .header {
-  background-color: black;
+  background-color: #f0ecec;
   padding: 10px;
   padding-left: 25px;
   padding-right: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
   // *LOGO
   &_logo {
     display: none;
     line-height: 0;
+    margin-bottom: 15px;
 
     &_img {
       width: 125px;
@@ -22,19 +24,19 @@
     height: 30px;
     display: flex;
     align-items: center;
-    border-color: white;
+    border-color: #3a3a3a;
     &_img {
       width: 20px;
       height: 20px;
       border-radius: 3px;
-      border-color: white;
+      border-color: #3a3a3a;
       margin: auto;
     }
   }
 
   // *TEXT NEAR LOGO
   &_text-logo {
-    color: white;
+    color: #3a3a3a;
     font-size: 15px;
     font-family: $mainFontFamily;
     display: none;
@@ -45,13 +47,13 @@
     padding-right: 20px;
 
     &_text {
-      color: white;
+      color: #3a3a3a;
       font-size: 10px;
       line-height: 15px;
       font-family: $mainFontFamily;
     }
     &_phone {
-      color: white;
+      color: #3a3a3a;
       font-size: 25px;
       font-family: $wowFontFamily;
       font-weight: bold;
@@ -63,4 +65,14 @@
   &_sosial-media {
     display: none;
   }
+}
+
+// --Фиксированный хедер
+.fixed-header {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20000; /* Чтобы хедер был выше других элементов */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
