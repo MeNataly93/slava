@@ -8,33 +8,20 @@ function arrowNone() {
     arrow.style.display = "none";
   }
 }
-// setInterval(arrowNone, 1);
-// // -Scroll to which element due to media query
-// const mediaQuery = window.matchMedia("(min-width: 990px)");
-// function scrollTo() {
-//   if (mediaQuery.matches) {
-//     console.log("ggg");
-//     arrow.href = "#top";
-//   } else arrow.href = "#";
-//   arrow.style.display = "none";
-// }
-
-const header = document.querySelector("header");
-const headerHeight = header.offsetHeight;
-const mediaQuery = window.matchMedia("(min-width: 990px)");
 
 function scrollToTop() {
-  if (mediaQuery.matches) {
-    arrow.href = "#top";
-  } else {
-    arrow.href = "#";
-    arrow.style.display = "none";
-    console.log("dfdfd");
-  }
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 }
 
+arrow.addEventListener("click", function (event) {
+  event.preventDefault();
+  scrollToTop();
+});
+
 window.addEventListener("scroll", arrowNone);
-window.addEventListener("resize", scrollToTop);
 
 // --MAIN SLIDER
 
@@ -169,19 +156,91 @@ window.addEventListener("resize", updateEventListeners);
 // Вызываем обновление обработчиков сразу после загрузки скрипта
 updateEventListeners();
 
-// --Фиксированный хедер
-document.addEventListener("DOMContentLoaded", function () {
-  var header = document.getElementById("header");
-  var headerHeight = header.offsetHeight;
+// --При клике на вкладках в хедере (от 1200 пикс) - переход к нужному блоку, но на Х пикселей выше
+// -Helter
+document
+  .getElementById("tab-helter")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Предотвращаем стандартное поведение ссылки
+    var helter = document.getElementById("helter");
+    var offset = 100;
+    var elementPosition =
+      helter.getBoundingClientRect().top + window.pageYOffset;
+    var offsetPosition = elementPosition - offset;
 
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > headerHeight) {
-      header.classList.add("fixed-header");
-    } else {
-      header.classList.remove("fixed-header");
-    }
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
   });
-});
+
+// -Tjenester
+document
+  .getElementById("tab-tjenester")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Предотвращаем стандартное поведение ссылки
+    var tjenester = document.getElementById("tjenester");
+    var offset = 100;
+    var elementPosition =
+      tjenester.getBoundingClientRect().top + window.pageYOffset;
+    var offsetPosition = elementPosition - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  });
+
+// -Tjenestepakker
+document
+  .getElementById("tab-tjenestepakker")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Предотвращаем стандартное поведение ссылки
+    var tjenestepakker = document.getElementById("tjenestepakker");
+    var offset = 100;
+    var elementPosition =
+      tjenestepakker.getBoundingClientRect().top + window.pageYOffset;
+    var offsetPosition = elementPosition - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  });
+
+// -Ordre
+document
+  .getElementById("tab-ordre")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Предотвращаем стандартное поведение ссылки
+    var ordre = document.getElementById("ordre");
+    var offset = 100;
+    var elementPosition =
+      ordre.getBoundingClientRect().top + window.pageYOffset;
+    var offsetPosition = elementPosition - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  });
+
+// -Galleri
+document
+  .getElementById("tab-galleri")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Предотвращаем стандартное поведение ссылки
+    var galleri = document.getElementById("galleri");
+    var offset = 100;
+    var elementPosition =
+      galleri.getBoundingClientRect().top + window.pageYOffset;
+    var offsetPosition = elementPosition - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  });
 
 // ----------------------------------------------------------------------------------------------
 

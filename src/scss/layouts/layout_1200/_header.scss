@@ -8,8 +8,34 @@
   }
 
   &_text-logo {
+    display: none;
+  }
+}
+
+// --Список вкладок
+.header_tabs {
+  display: block;
+
+  &_list {
+    list-style-type: none;
+    padding-inline-start: 0;
     display: flex;
-    margin-top: auto;
-    margin-bottom: auto;
+    gap: 30px;
+    &_item {
+    }
+  }
+}
+
+.tabs-link {
+  text-decoration: none;
+  color: #8845ac;
+  font-weight: 700;
+
+  &:hover {
+    background-color: #8845ac;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 40px;
+    box-shadow: 0 8px 15px rgba(157, 52, 184, 0.25);
   }
 }

@@ -7,6 +7,11 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20000; /* Чтобы хедер был выше других элементов */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   // *LOGO
   &_logo {
     display: none;
@@ -67,12 +72,7 @@
   }
 }
 
-// --Фиксированный хедер
-.fixed-header {
-  position: fixed !important;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 20000; /* Чтобы хедер был выше других элементов */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+// --Список вкладок
+.header_tabs {
+  display: none;
 }
