@@ -156,7 +156,7 @@ window.addEventListener("resize", updateEventListeners);
 // Вызываем обновление обработчиков сразу после загрузки скрипта
 updateEventListeners();
 
-// --При клике на вкладках в хедере (от 1200 пикс) - переход к нужному блоку, но на Х пикселей выше
+// --При клике на вкладках в хедере (от 1200 пикс) - переход к нужному блоку, но на 100 пикселей выше
 // -Helter
 document
   .getElementById("tab-helter")
@@ -242,6 +242,163 @@ document
     });
   });
 
+// --Бургерное меню в мобильной версии
+document.addEventListener("DOMContentLoaded", function () {
+  const menuButton = document.getElementById("menu");
+  const burgerMenu = document.querySelector(".burger");
+  const burgeroverlay = document.querySelector(".burger-overlay");
+  const menuItems = document.querySelectorAll(".burger a"); // Assuming your menu items are <a> tags inside the .burger menu
+
+  menuButton.addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent default link behavior
+    if (burgerMenu.style.display === "block") {
+      burgerMenu.style.display = "none";
+      burgeroverlay.style.display = "none";
+      document.getElementById("menu-burger-img").src = "./i/img/menu.png";
+    } else {
+      burgerMenu.style.display = "block";
+      burgeroverlay.style.display = "block";
+      document.getElementById("menu-burger-img").src = "./i/img/closeimg.png";
+    }
+  });
+
+  burgeroverlay.addEventListener("click", function () {
+    burgerMenu.style.display = "none";
+    burgeroverlay.style.display = "none";
+    document.getElementById("menu-burger-img").src = "./i/img/menu.png";
+  });
+
+  menuItems.forEach((item) => {
+    item.addEventListener("click", function () {
+      burgerMenu.style.display = "none";
+      burgeroverlay.style.display = "none";
+      document.getElementById("menu-burger-img").src = "./i/img/menu.png";
+    });
+  });
+});
+
+// --При клике на вкладках в хедере (в мобильной версии, до 1200 пикс) - переход к нужному блоку, но на 120 пикселей выше
+// -Helter
+document
+  .getElementById("mobtab-helter")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Предотвращаем стандартное поведение ссылки
+    var helter = document.getElementById("helter");
+    var offset = 120;
+    var elementPosition =
+      helter.getBoundingClientRect().top + window.pageYOffset;
+    var offsetPosition = elementPosition - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  });
+
+// -Tjenester
+document
+  .getElementById("mobtab-tjenester")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Предотвращаем стандартное поведение ссылки
+    var tjenester = document.getElementById("tjenester");
+    var offset = 120;
+    var elementPosition =
+      tjenester.getBoundingClientRect().top + window.pageYOffset;
+    var offsetPosition = elementPosition - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  });
+
+// -Tjenestepakker
+document
+  .getElementById("mobtab-tjenestepakker")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Предотвращаем стандартное поведение ссылки
+    var tjenestepakker = document.getElementById("tjenestepakker");
+    var offset = 120;
+    var elementPosition =
+      tjenestepakker.getBoundingClientRect().top + window.pageYOffset;
+    var offsetPosition = elementPosition - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  });
+
+// -Ordre
+document
+  .getElementById("mobtab-ordre")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Предотвращаем стандартное поведение ссылки
+    var ordre = document.getElementById("ordre");
+    var offset = 120;
+    var elementPosition =
+      ordre.getBoundingClientRect().top + window.pageYOffset;
+    var offsetPosition = elementPosition - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  });
+
+// -Galleri
+document
+  .getElementById("mobtab-galleri")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Предотвращаем стандартное поведение ссылки
+    var galleri = document.getElementById("galleri");
+    var offset = 120;
+    var elementPosition =
+      galleri.getBoundingClientRect().top + window.pageYOffset;
+    var offsetPosition = elementPosition - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  });
+
+// --При клике на вкладку внутри бургерного меню - меню и затемнение закрывается
+// document.addEventListener("DOMContentLoaded", function () {
+//   const menuButton = document.getElementById("menu");
+//   const burgerMenu = document.querySelector(".burger");
+//   const overlay = document.querySelector(".overlay");
+//   const menuItems = document.querySelectorAll(".burger_list_item");
+
+//   menuItems.addEventListener("click", function (event) {
+//     event.preventDefault(); // Prevent default link behavior
+//     if (burgerMenu.style.display = "block";) {
+//       closeMenu();
+//     } else {
+//       openMenu();
+//     }
+//   });
+
+//   overlay.addEventListener("click", function () {
+//     closeMenu();
+//   });
+
+//   menuItems.forEach((item) => {
+//     item.addEventListener("click", function () {
+//       closeMenu();
+//     });
+//   });
+
+//   function openMenu() {
+//     burgerMenu.classList.add("show");
+//     overlay.classList.add("show");
+//   }
+
+//   function closeMenu() {
+//     burgerMenu.classList.remove("show");
+//     overlay.classList.remove("show");
+//   }
+// });
 // ----------------------------------------------------------------------------------------------
 
 // // --SHADOW FOR NAV IN SCROLL
