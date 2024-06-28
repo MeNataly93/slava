@@ -1,11 +1,84 @@
+// --Видео внутри TITLE
+document.addEventListener("DOMContentLoaded", () => {
+  const overlayvideo = document.getElementById("overlay-video");
+  const videoLink = document.getElementById("videoLink");
+  const videoButton = document.getElementById("videoButton");
+
+  const showOverlay = () => {
+    overlayvideo.style.display = "flex";
+    // videoContainer.style.display = "block";
+  };
+
+  const hideOverlay = () => {
+    overlayvideo.style.display = "none";
+    // videoContainer.style.display = "none";
+  };
+
+  videoLink.addEventListener("click", (event) => {
+    event.preventDefault();
+    showOverlay();
+  });
+
+  videoButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    showOverlay();
+  });
+
+  overlayvideo.addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent default link behavior
+    if (overlayvideo.style.display == "flex") {
+      hideOverlay();
+    } else {
+      showOverlay();
+    }
+  });
+});
+
+// --KONTAKTBUTTON
+// -При клике в десктопной версии - переход к нужному блоку, но на 250 пикселей выше
+document
+  .getElementById("kontaktbutton")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Предотвращаем стандартное поведение ссылки
+    var kontaktblock = document.getElementById("ordre");
+    var offset = 250;
+    var elementPosition =
+      kontaktblock.getBoundingClientRect().top + window.pageYOffset;
+    var offsetPosition = elementPosition - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  });
+
+// -При клике в мобильной версии, до 1200 пикс - переход к нужному блоку, но на 90 пикселей выше
+document
+  .getElementById("kontaktbutton")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Предотвращаем стандартное поведение ссылки
+    var kontaktblock = document.getElementById("ordre");
+    var offset = 90;
+    var elementPosition =
+      kontaktblock.getBoundingClientRect().top + window.pageYOffset;
+    var offsetPosition = elementPosition - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  });
+
 // --ARROW SCROLL
 // -Visible or not
 const arrow = document.getElementById("arrow");
+
 function arrowNone() {
   let scrollHeight = window.pageYOffset;
-  arrow.style.display = "block";
   if (scrollHeight < 460) {
     arrow.style.display = "none";
+  } else {
+    arrow.style.display = "block";
   }
 }
 
@@ -22,6 +95,9 @@ arrow.addEventListener("click", function (event) {
 });
 
 window.addEventListener("scroll", arrowNone);
+
+// Вызываем функцию сразу, чтобы установить начальное состояние при загрузке страницы
+arrowNone();
 
 // --MAIN SLIDER
 

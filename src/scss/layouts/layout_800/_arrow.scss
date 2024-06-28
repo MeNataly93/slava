@@ -15,3 +15,29 @@
     }
   }
 }
+.arrow-scroll {
+  position: absolute;
+  width: 48px;
+  top: 8px;
+  left: 8px;
+}
+.kontaktbutton {
+  width: 64px;
+  height: 64px;
+  left: 30px;
+  bottom: 30px;
+  border-radius: 100%;
+  text-align: center;
+  vertical-align: middle;
+
+  &_img {
+    position: absolute;
+    width: 30px;
+    top: 17px;
+    left: 17px;
+  }
+
+  &:hover {
+    background-color: $dark-grey;
+  }
+}

@@ -92,8 +92,9 @@
 
   <!-- --TITLE -->
   <div class="title-div">
-    <div class="title-div_motor"><img class="title-div_motor_img" src="./i/img/motor.png" alt="motor">
-      <a class="title-div_motor_button" href="#">Vise video</a>
+    <div class="title-div_motor"><a id="videoLink" href="#video"><img class="title-div_motor_img"
+          src="./i/img/motor.png" alt="motor"></a>
+      <a class="title-div_motor_button" id="videoButton" href="#video">Vise video</a>
     </div>
     <div class="div-for1200">
       <h1 class="title-div_text">Vi lager barnafestar som barn vil huske for alltid</h1>
@@ -105,6 +106,16 @@
           <li class="title-div_item title-div_item_4">Bursdagfest <br> Parti <br> Festival <br> Butikkannonserring</li>
         </ul>
       </div>
+    </div>
+  </div>
+
+  <!-- --Видео внутри титла -->
+  <div id="overlay-video" class="overlay-video">
+    <div class="video-container">
+      <video controls>
+        <source src="./i/img/Video.MOV" type="video/mp4">
+
+      </video>
     </div>
   </div>
 
@@ -552,15 +563,6 @@
   </section>
 
 
-  <!-- --ARROW (SCROLL) -->
-  <a class="arrow" id="arrow" href="#header"><img class="arrow-scroll" src="./i/img/arrow-scroll.png" alt="arrow"></a>
-
-
-
-  <script src="./js/jquery-3.6.1.min.js"></script>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-  <script src="./js/script.js"></script>
 
 
 
@@ -608,7 +610,20 @@
     </div>
   </div>
 
+  <!-- --ARROW (SCROLL) -->
+  <a class="arrow" id="arrow" href="#header"><img class="arrow-scroll" src="./i/img/arrow-scroll.png" alt="arrow"></a>
 
+
+
+
+  <!-- --KONTAKT-BOTTOM -->
+  <a class="kontaktbutton" id="kontaktbutton" href="#ordre"><img class="kontaktbutton_img"
+      src="./i/img/kontaktbutton.png" alt="kontaktbutton"></a>
+
+  <script src="./js/jquery-3.6.1.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="./js/script.js"></script>
 
 
 
