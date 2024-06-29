@@ -68,6 +68,12 @@
     color: #fff;
     cursor: pointer;
     font-weight: 700;
+
+    &:hover {
+      background: linear-gradient(265.66deg, #ff4dc3 0.55%, #9256ff 99.66%);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+      transform: translateY(-2px);
+    }
   }
 
   &_img {

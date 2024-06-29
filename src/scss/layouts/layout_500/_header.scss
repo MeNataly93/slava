@@ -31,10 +31,16 @@
     &_inst {
       margin-right: 5px;
       line-height: 0;
+      &:hover {
+        filter: brightness(120%);
+      }
     }
     &_fb {
       margin-left: 5px;
       line-height: 0;
+      &:hover {
+        filter: brightness(120%);
+      }
     }
   }
 }

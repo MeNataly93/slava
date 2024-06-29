@@ -1,3 +1,16 @@
+// --KONTAKT
+// -Месенджер
+document
+  .getElementById("messengerButton")
+  .addEventListener("click", function () {
+    window.open("https://www.facebook.com/groups/3081311612171554", "_blank");
+  });
+
+// -Звонок
+function makeCall() {
+  window.location.href = "tel:+380960352339";
+}
+
 // --Видео внутри TITLE
 document.addEventListener("DOMContentLoaded", () => {
   const overlayvideo = document.getElementById("overlay-video");
@@ -33,6 +46,41 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// --Ta kontakt med oss - кнопка в баннере
+// -При клике в десктопной версии - переход к нужному блоку, но на 250 пикселей выше
+document
+  .getElementById("bannerbutton")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Предотвращаем стандартное поведение ссылки
+    var kontaktblock = document.getElementById("ordre");
+    var offset = 250;
+    var elementPosition =
+      kontaktblock.getBoundingClientRect().top + window.pageYOffset;
+    var offsetPosition = elementPosition - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  });
+
+// -При клике в мобильной версии, до 1200 пикс - переход к нужному блоку, но на 90 пикселей выше
+document
+  .getElementById("bannerbutton")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Предотвращаем стандартное поведение ссылки
+    var kontaktblock = document.getElementById("ordre");
+    var offset = 90;
+    var elementPosition =
+      kontaktblock.getBoundingClientRect().top + window.pageYOffset;
+    var offsetPosition = elementPosition - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  });
 
 // --KONTAKTBUTTON
 // -При клике в десктопной версии - переход к нужному блоку, но на 250 пикселей выше

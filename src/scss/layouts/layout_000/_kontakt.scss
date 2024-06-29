@@ -48,7 +48,6 @@
 
       color: #ffffff;
       text-decoration: none;
-      cursor: pointer;
       text-align: center;
       font-weight: 700;
       letter-spacing: 0.25px;
@@ -81,6 +80,7 @@
     text-align: center;
     margin-top: 30px;
     &_btn1 {
+      cursor: pointer;
       width: 210px;
       padding: 10px 30px 10px 55px;
       border-radius: 64px;
@@ -117,9 +117,21 @@
         background-size: 100% 100%;
         margin: 0 4px -6px -4px;
       }
+
+      &:hover {
+        background: linear-gradient(
+          180deg,
+          #72c357 0%,
+          #50b973 53%,
+          #61a848 100%
+        );
+        box-shadow: 0 10px 20px rgba(157, 52, 184, 0.35);
+        transform: translateY(-2px);
+      }
     }
 
     &_btn2 {
+      cursor: pointer;
       width: 210px;
       padding: 10px 40px 10px 80px;
       border-radius: 64px;
@@ -154,6 +166,16 @@
         background-size: 100% 100%;
         // margin: 0 4px -6px -4px;
         background-image: url(../../../i/img/mes.svg);
+      }
+      &:hover {
+        background: linear-gradient(
+          180deg,
+          #72c357 0%,
+          #50b973 53%,
+          #61a848 100%
+        );
+        box-shadow: 0 10px 20px rgba(157, 52, 184, 0.35);
+        transform: translateY(-2px);
       }
     }
   }

@@ -103,6 +103,11 @@
         font-weight: 700;
         margin-left: auto;
         margin-right: auto;
+        &:hover {
+          background: linear-gradient(90.86deg, #b874ff 0.17%, #ff74e6 99.85%);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+          transform: translateY(-2px);
+        }
       }
 
       &_heroes {

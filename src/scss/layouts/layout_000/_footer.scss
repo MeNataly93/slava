@@ -35,6 +35,16 @@
     list-style-type: none;
     padding-inline-start: 0;
     column-gap: 10px;
+    &_inst {
+      &:hover {
+        filter: brightness(120%);
+      }
+    }
+    &_fb {
+      &:hover {
+        filter: brightness(120%);
+      }
+    }
   }
 
   &_tlf {

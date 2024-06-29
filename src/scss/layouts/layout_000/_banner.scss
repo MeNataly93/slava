@@ -6,17 +6,6 @@
   overflow: hidden;
   box-shadow: 0px 40px 65px 5px rgba(212, 148, 30, 0.5);
 
-  // padding-bottom: 60px;
-
-  // background: rgb(134, 179, 45);
-  // background: linear-gradient(
-  //   0deg,
-  //   rgba(134, 179, 45, 1) 0%,
-  //   rgba(159, 238, 0, 1) 83%,
-  //   rgba(134, 179, 45, 1) 100%
-  // );
-
-  // background: linear-gradient(180deg, #fe8b05 0%, #fed714 139.52%);
   background-image: url(../../../i/img/bg.png);
   background-position: center;
   border-radius: 40px;
@@ -47,7 +36,6 @@
     font-size: 14px;
     line-height: 12px;
     height: 55px;
-    // width: 280px;
     text-align: center;
     padding-left: 30px;
     padding-right: 30px;
@@ -66,6 +54,10 @@
     text-decoration: none;
     font-weight: 700;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    &:hover {
+      transform: translateY(-2px); /* Небольшой подъем при наведении */
+      box-shadow: 0 12px 20px rgba(157, 52, 184, 0.35); /* Усиление тени */
+    }
   }
 
   &_text {
