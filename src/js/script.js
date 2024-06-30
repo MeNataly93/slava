@@ -69,17 +69,19 @@ document
 document
   .getElementById("bannerbutton")
   .addEventListener("click", function (event) {
-    event.preventDefault(); // Предотвращаем стандартное поведение ссылки
-    var kontaktblock = document.getElementById("ordre");
-    var offset = 90;
-    var elementPosition =
-      kontaktblock.getBoundingClientRect().top + window.pageYOffset;
-    var offsetPosition = elementPosition - offset;
+    if (window.innerWidth <= 1200) {
+      event.preventDefault(); // Prevent the default behavior of the link
+      var kontaktblock = document.getElementById("ordre");
+      var offset = 90;
+      var elementPosition =
+        kontaktblock.getBoundingClientRect().top + window.pageYOffset;
+      var offsetPosition = elementPosition - offset;
 
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: "smooth",
-    });
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
   });
 
 // --KONTAKTBUTTON
@@ -101,20 +103,23 @@ document
   });
 
 // -При клике в мобильной версии, до 1200 пикс - переход к нужному блоку, но на 90 пикселей выше
+
 document
   .getElementById("kontaktbutton")
   .addEventListener("click", function (event) {
-    event.preventDefault(); // Предотвращаем стандартное поведение ссылки
-    var kontaktblock = document.getElementById("ordre");
-    var offset = 90;
-    var elementPosition =
-      kontaktblock.getBoundingClientRect().top + window.pageYOffset;
-    var offsetPosition = elementPosition - offset;
+    if (window.innerWidth <= 1200) {
+      event.preventDefault(); // Prevent the default behavior of the link
+      var kontaktblock = document.getElementById("ordre");
+      var offset = 90;
+      var elementPosition =
+        kontaktblock.getBoundingClientRect().top + window.pageYOffset;
+      var offsetPosition = elementPosition - offset;
 
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: "smooth",
-    });
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
   });
 
 // --ARROW SCROLL
@@ -281,6 +286,7 @@ window.addEventListener("resize", updateEventListeners);
 updateEventListeners();
 
 // --При клике на вкладках в хедере (от 1200 пикс) - переход к нужному блоку, но на 100 пикселей выше
+
 // -Helter
 document
   .getElementById("tab-helter")
@@ -406,85 +412,95 @@ document.addEventListener("DOMContentLoaded", function () {
 document
   .getElementById("mobtab-helter")
   .addEventListener("click", function (event) {
-    event.preventDefault(); // Предотвращаем стандартное поведение ссылки
-    var helter = document.getElementById("helter");
-    var offset = 120;
-    var elementPosition =
-      helter.getBoundingClientRect().top + window.pageYOffset;
-    var offsetPosition = elementPosition - offset;
+    if (window.innerWidth <= 1200) {
+      event.preventDefault(); // Предотвращаем стандартное поведение ссылки
+      var helter = document.getElementById("helter");
+      var offset = 120;
+      var elementPosition =
+        helter.getBoundingClientRect().top + window.pageYOffset;
+      var offsetPosition = elementPosition - offset;
 
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: "smooth",
-    });
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
   });
 
 // -Tjenester
 document
   .getElementById("mobtab-tjenester")
   .addEventListener("click", function (event) {
-    event.preventDefault(); // Предотвращаем стандартное поведение ссылки
-    var tjenester = document.getElementById("tjenester");
-    var offset = 120;
-    var elementPosition =
-      tjenester.getBoundingClientRect().top + window.pageYOffset;
-    var offsetPosition = elementPosition - offset;
+    if (window.innerWidth <= 1200) {
+      event.preventDefault(); // Предотвращаем стандартное поведение ссылки
+      var tjenester = document.getElementById("tjenester");
+      var offset = 120;
+      var elementPosition =
+        tjenester.getBoundingClientRect().top + window.pageYOffset;
+      var offsetPosition = elementPosition - offset;
 
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: "smooth",
-    });
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
   });
 
 // -Tjenestepakker
 document
   .getElementById("mobtab-tjenestepakker")
   .addEventListener("click", function (event) {
-    event.preventDefault(); // Предотвращаем стандартное поведение ссылки
-    var tjenestepakker = document.getElementById("tjenestepakker");
-    var offset = 120;
-    var elementPosition =
-      tjenestepakker.getBoundingClientRect().top + window.pageYOffset;
-    var offsetPosition = elementPosition - offset;
+    if (window.innerWidth <= 1200) {
+      event.preventDefault(); // Предотвращаем стандартное поведение ссылки
+      var tjenestepakker = document.getElementById("tjenestepakker");
+      var offset = 120;
+      var elementPosition =
+        tjenestepakker.getBoundingClientRect().top + window.pageYOffset;
+      var offsetPosition = elementPosition - offset;
 
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: "smooth",
-    });
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
   });
 
 // -Ordre
 document
   .getElementById("mobtab-ordre")
   .addEventListener("click", function (event) {
-    event.preventDefault(); // Предотвращаем стандартное поведение ссылки
-    var ordre = document.getElementById("ordre");
-    var offset = 120;
-    var elementPosition =
-      ordre.getBoundingClientRect().top + window.pageYOffset;
-    var offsetPosition = elementPosition - offset;
+    if (window.innerWidth <= 1200) {
+      event.preventDefault(); // Предотвращаем стандартное поведение ссылки
+      var ordre = document.getElementById("ordre");
+      var offset = 120;
+      var elementPosition =
+        ordre.getBoundingClientRect().top + window.pageYOffset;
+      var offsetPosition = elementPosition - offset;
 
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: "smooth",
-    });
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
   });
 
 // -Galleri
 document
   .getElementById("mobtab-galleri")
   .addEventListener("click", function (event) {
-    event.preventDefault(); // Предотвращаем стандартное поведение ссылки
-    var galleri = document.getElementById("galleri");
-    var offset = 120;
-    var elementPosition =
-      galleri.getBoundingClientRect().top + window.pageYOffset;
-    var offsetPosition = elementPosition - offset;
+    if (window.innerWidth <= 1200) {
+      event.preventDefault(); // Предотвращаем стандартное поведение ссылки
+      var galleri = document.getElementById("galleri");
+      var offset = 120;
+      var elementPosition =
+        galleri.getBoundingClientRect().top + window.pageYOffset;
+      var offsetPosition = elementPosition - offset;
 
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: "smooth",
-    });
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
   });
 
 // --При клике на вкладку внутри бургерного меню - меню и затемнение закрывается
