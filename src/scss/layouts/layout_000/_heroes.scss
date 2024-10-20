@@ -36,7 +36,9 @@
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 100px;
-      padding-bottom: 50px;
+      // padding-bottom: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
       display: flex;
       flex-direction: column;
       background: #fff;
@@ -51,6 +53,13 @@
       font-weight: 400;
       letter-spacing: 0.25px;
       padding-top: 125px;
+      cursor: pointer;
+      &:hover {
+        background: linear-gradient(90.86deg, #ae67fd 0.17%, #fc67d6 99.85%);
+        box-shadow: 0 10px 20px rgba(157, 52, 184, 0.35);
+        transform: translateY(-2px);
+      }
+
       &_img {
         position: absolute;
         top: -125px;
