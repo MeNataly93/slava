@@ -1,0 +1,115 @@
+/* Затемнение экрана */
+.overlayhelter {
+  display: none; /* Убираем flex, чтобы модалка не была открыта сразу */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 5000;
+}
+
+/* Контейнер модального окна */
+.overlayhelter_superhelter {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+/* Кнопка закрытия */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #e63946;
+  color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-button:hover {
+  background: #c5303d;
+}
+
+/* Заголовок */
+.overlayhelter_superhelter-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Блок с ценой */
+.superhelter-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e63946;
+}
+
+.superhelter-price-text {
+  font-size: 16px;
+  color: #555;
+  margin-left: 5px;
+}
+
+/* Видео */
+.superhelter-video {
+  width: 100%;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+/* Подзаголовки и текст */
+.superhelter-subtitle,
+.superhelter-subtitle-2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.superhelter-subtitle-text,
+.overlayhelter_superhelter-text {
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+}
+
+/* Грид с изображениями */
+.superhelter-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.superhelter-grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.superhelter-grid-item img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.superhelter-grid-item p {
+  margin-top: 5px;
+  font-size: 14px;
+}

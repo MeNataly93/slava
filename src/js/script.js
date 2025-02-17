@@ -503,6 +503,44 @@ document
     }
   });
 
+// --Всплывающие блоки с героями при нажатии - работа кнопки закрытия блока
+document.addEventListener("DOMContentLoaded", function () {
+  const overlay = document.querySelector(".overlayhelter");
+  const closeButton = document.querySelector(".close-button");
+
+  if (closeButton) {
+    closeButton.addEventListener("click", function () {
+      overlay.style.display = "none";
+    });
+  }
+});
+
+// --Всплывающие блоки с героями при нажатии - открытие всплывающего блока
+
+document.addEventListener("DOMContentLoaded", function () {
+  const overlay = document.querySelector(".overlayhelter");
+  const closeButton = document.querySelector(".close-button");
+  const triggerBlock = document.querySelector(".heroes_grid_block_1");
+
+  if (triggerBlock) {
+    triggerBlock.addEventListener("click", function () {
+      overlay.style.display = "flex";
+    });
+  }
+
+  if (closeButton) {
+    closeButton.addEventListener("click", function () {
+      overlay.style.display = "none";
+    });
+  }
+
+  overlay.addEventListener("click", function (event) {
+    if (event.target === overlay) {
+      overlay.style.display = "none";
+    }
+  });
+});
+
 // --При клике на вкладку внутри бургерного меню - меню и затемнение закрывается
 // document.addEventListener("DOMContentLoaded", function () {
 //   const menuButton = document.getElementById("menu");
