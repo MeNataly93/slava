@@ -1,6 +1,6 @@
 /* Затемнение экрана */
 .overlayhelter {
-  display: none; /* Убираем flex, чтобы модалка не была открыта сразу */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -15,13 +15,23 @@
 /* Контейнер модального окна */
 .overlayhelter_superhelter {
   background: white;
-  padding: 20px;
+  padding: 25px;
   border-radius: 10px;
-  max-width: 600px;
+  max-width: 450px;
   width: 90%;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   position: relative;
+  // background-image: url(../../../i/img/backoverlay.png);
+  background-image: linear-gradient(
+      90deg,
+      rgba(238, 110, 245, 0.5),
+      rgba(87, 185, 255, 0.5)
+    ),
+    url(../../../i/img/backoverlay.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
 }
 
 /* Кнопка закрытия */
@@ -29,14 +39,14 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  background: #e63946;
-  color: white;
+  background: white;
+  color: black;
   border: none;
-  width: 30px;
-  height: 30px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,43 +59,59 @@
 /* Заголовок */
 .overlayhelter_superhelter-title {
   font-size: 24px;
+  font-family: $wowFontFamily;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.overlayhelter_superhelter-price {
+  margin-top: 16px;
+  text-align: left;
 }
 
 /* Блок с ценой */
 .superhelter-price {
-  font-size: 20px;
+  font-size: 12px;
   font-weight: bold;
-  color: #e63946;
+  font-family: $wowFontFamily;
+  background-color: #3db413;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 16px;
+  margin-right: 8px;
 }
 
 .superhelter-price-text {
-  font-size: 16px;
-  color: #555;
-  margin-left: 5px;
+  font-size: 12px;
+  color: black;
+  margin-left: 4px;
 }
 
 /* Видео */
 .superhelter-video {
   width: 100%;
-  margin: 15px 0;
+  max-width: 300px;
+  margin: 8px 0;
   border-radius: 5px;
+  margin-top: 16px;
 }
 
 /* Подзаголовки и текст */
 .superhelter-subtitle,
 .superhelter-subtitle-2 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
-  margin-top: 15px;
+  margin-top: 8px;
+  margin-bottom: 12px;
   text-align: left;
+  font-family: $wowFontFamily;
 }
 
 .superhelter-subtitle-text,
 .overlayhelter_superhelter-text {
-  font-size: 16px;
-  color: #333;
+  font-size: 12px;
+  color: black;
   text-align: left;
 }
 
@@ -93,23 +119,39 @@
 .superhelter-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  margin: 15px 0;
+  gap: 6px;
+  margin: 8px 0;
 }
 
 .superhelter-grid-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 }
 
 .superhelter-grid-item img {
-  width: 100px;
-  height: auto;
-  border-radius: 5px;
+  width: 70px;
+  height: 140px;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .superhelter-grid-item p {
-  margin-top: 5px;
-  font-size: 14px;
+  margin-top: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: $wowFontFamily;
+  background: linear-gradient(90deg, #c366f0 0%, #ec66dc 100%);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 16px;
+  margin-right: 8px;
+  width: auto;
+}
+.overlayhelter_superhelter-mainblock {
+  width: 100%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
