@@ -7,7 +7,7 @@
 
 .where-block {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 500px;
   overflow: hidden;
   position: relative;
@@ -15,10 +15,17 @@
 
 .where_title {
   text-align: left;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .where {
   &_title {
     margin-top: 45px;
   }
+}
+
+.where_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
