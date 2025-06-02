@@ -1,0 +1,49 @@
+/* Грид  */
+// .maingrid-for-900 {
+//   display: grid;
+//   grid-template-columns: repeat(2, 1fr);
+// gap: 6px;
+// margin: 8px 0;
+// margin-bottom: 24px; /**MARGIN**/
+// }
+
+.overlayhelter-block {
+  max-width: 750px;
+  background-image: linear-gradient(
+      90deg,
+      rgba(238, 110, 245, 0.5),
+      rgba(87, 185, 255, 0.5)
+    ),
+    url(../../../i/img/backoverlay-horisont.png);
+  background-position: right;
+}
+.overlayhelter-title {
+  margin-bottom: 15px;
+}
+
+.overlayhelter-textblock {
+  max-width: 600px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.overlayhelter-textblock-grid {
+  margin-bottom: 13px;
+}
+
+.maingrid-for-900 {
+  display: grid;
+  grid-template-columns: 50% 45%;
+  grid-template-areas: "grid-for-900-block1 grid-for-900-block2";
+  gap: 5%;
+  margin-top: 30px;
+}
+
+.grid-for-900 {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.overlayhelter-textblock-subtitle-2 {
+  margin-top: 10px;
+}
