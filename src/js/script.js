@@ -518,28 +518,50 @@ document.addEventListener("DOMContentLoaded", function () {
 // --Всплывающие блоки с героями при нажатии - открытие всплывающего блока
 
 document.addEventListener("DOMContentLoaded", function () {
+  const heroesBlock = document.querySelector(".heroes_grid_block_1");
   const overlay = document.querySelector(".overlayhelter");
-  const closeButton = document.querySelector(".close-button");
-  const triggerBlock = document.querySelector(".heroes_grid_block_1");
+  const closeBtn = document.querySelector(".overlayhelter .close-button");
+  const heroes = document.getElementById("helter-grid");
 
-  if (triggerBlock) {
-    triggerBlock.addEventListener("click", function () {
-      overlay.style.display = "flex";
-    });
-  }
+  // Изначально скрываем overlay (если нужно)
+  overlay.style.display = "none";
 
-  if (closeButton) {
-    closeButton.addEventListener("click", function () {
-      overlay.style.display = "none";
-    });
-  }
+  // Открытие overlay
+  heroesBlock.addEventListener("click", function () {
+    heroes.style.display = "none";
+    overlay.style.display = "block";
+  });
 
-  overlay.addEventListener("click", function (event) {
-    if (event.target === overlay) {
-      overlay.style.display = "none";
-    }
+  // Закрытие overlay
+  closeBtn.addEventListener("click", function () {
+    overlay.style.display = "none";
+    heroes.style.display = "grid";
   });
 });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const overlay = document.querySelector(".overlayhelter");
+//   const closeButton = document.querySelector(".close-button");
+//   const triggerBlock = document.querySelector(".heroes_grid_block_1");
+
+//   if (triggerBlock) {
+//     triggerBlock.addEventListener("click", function () {
+//       overlay.style.display = "flex";
+//     });
+//   }
+
+//   if (closeButton) {
+//     closeButton.addEventListener("click", function () {
+//       overlay.style.display = "none";
+//     });
+//   }
+
+//   overlay.addEventListener("click", function (event) {
+//     if (event.target === overlay) {
+//       overlay.style.display = "none";
+//     }
+//   });
+// });
 
 // --При клике на вкладку внутри бургерного меню - меню и затемнение закрывается
 // document.addEventListener("DOMContentLoaded", function () {

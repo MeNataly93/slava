@@ -1,15 +1,7 @@
 /* Затемнение экрана */
 .overlayhelter {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  justify-content: center;
-  align-items: center;
-  z-index: 5000;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Контейнер модального окна */
@@ -22,7 +14,6 @@
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   position: relative;
-  // background-image: url(../../../i/img/backoverlay.png);
   background-image: linear-gradient(
       90deg,
       rgba(238, 110, 245, 0.5),
@@ -32,9 +23,8 @@
   background-size: cover;
   background-position: center;
   border-radius: 20px;
-
-  max-height: 90vh; /* Максимальная высота всплывающего блока */
-  overflow-y: auto; /* Добавление прокрутки, если контент не помещается */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Кнопка закрытия */
@@ -61,7 +51,7 @@
 
 /* Заголовок */
 .overlayhelter-title {
-  font-size: 22px;
+  font-size: 24px;
   font-family: $wowFontFamily;
   font-weight: bold;
   margin-bottom: 24px; /**MARGIN**/
@@ -94,7 +84,7 @@
 /* Видео */
 .overlayhelter-video {
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
   margin: 8px 0;
   border-radius: 5px;
   margin-bottom: 24px; /**MARGIN**/
@@ -103,7 +93,7 @@
 /* Подзаголовки и текст */
 .overlayhelter-textblock-subtitle,
 .overlayhelter-textblock-subtitle-2 {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
   // margin-top: 8px;
   margin-bottom: 20px; /**MARGIN**/
@@ -113,7 +103,7 @@
 
 .overlayhelter-textblock-subtitle-text,
 .overlayhelter-textblock-extratext {
-  font-size: 14px;
+  font-size: 15px;
   color: black;
   text-align: left;
   margin-bottom: 24px; /**MARGIN**/
