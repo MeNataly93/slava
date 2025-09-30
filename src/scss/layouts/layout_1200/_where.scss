@@ -1,3 +1,31 @@
+.for-image {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+}
+
 .where-block {
-  max-width: 1800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.where_title {
+  text-align: left;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.where {
+  &_title {
+    margin-top: 45px;
+  }
+}
+
+.where_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

@@ -1,0 +1,14 @@
+.why {
+  &_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 10px;
+    width: 800px;
+    max-width: 800px;
+
+    &_item {
+      padding: 30px 36px;
+    }
+  }
+}

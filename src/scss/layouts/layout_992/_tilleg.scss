@@ -1,0 +1,167 @@
+.tilleg {
+  width: 80%;
+  max-width: 1800px;
+
+  &_title {
+    margin-top: 100px;
+    // margin-bottom: 30px;
+  }
+
+  &_list {
+    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    // grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    // grid-template-areas:
+    //   "tf tf ts ts tt tt"
+    //   "tfr tfr tfv tfv tsx tsx"
+    //   "tsn tsn te te tpin tpin"
+    //   ". tfot tfot tbal tbal .";
+    grid-template-areas:
+      "tf tf ts ts"
+      "tt tt tfr tfr"
+      " tfv tfv tsx tsx"
+      "tsn tsn te te"
+      "tpin tpin tfot tfot"
+      ". tbal tbal .";
+    column-gap: 20px;
+    row-gap: 20px;
+    width: 1fr;
+
+    &_frame {
+      padding: 0;
+      margin-top: 0;
+    }
+  }
+  &_item-description {
+    font-size: 16px;
+    padding: 40px;
+
+    &_text {
+      width: 80%;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    margin-right: auto;
+
+    &_price {
+      font-size: 16px;
+      width: 80%;
+      max-width: 80%;
+      margin-top: 20px;
+
+      &_second {
+        font-size: 16px;
+        width: 80%;
+        max-width: 80%;
+      }
+    }
+  }
+}
+
+.tf {
+  grid-area: tf;
+}
+.ts {
+  grid-area: ts;
+}
+.tt {
+  grid-area: tt;
+}
+.tfr {
+  grid-area: tfr;
+}
+.tfv {
+  grid-area: tfv;
+}
+.tsx {
+  grid-area: tsx;
+}
+.tsn {
+  grid-area: tsn;
+}
+.te {
+  grid-area: te;
+}
+.tpin {
+  grid-area: tpin;
+}
+.tfot {
+  grid-area: tfot;
+}
+.tbal {
+  grid-area: tbal;
+}
+
+.tilleg_item-bg_6 {
+  font-size: 15px;
+}
+
+// --ПРИ НАВЕДЕНИИ НА БЛОК
+.tilleg_list_frame:hover .tilleg_item-img {
+  visibility: hidden;
+}
+
+.tilleg_list_frame:hover .tilleg-help-block {
+  background-image: url(/i/img/kids.jpg);
+  background-size: cover;
+  background-position: top;
+  background-color: rgba(58, 58, 58, 0.95);
+  background-blend-mode: overlay;
+  visibility: visible;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  .tilleg_item-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+
+    line-height: 1.2;
+    color: white;
+    font-weight: 500;
+    font-family: $wowFontFamily;
+    z-index: 2000;
+    visibility: visible;
+    font-size: 16px;
+    padding: 40px;
+    &_text {
+      width: 80%;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    margin-right: auto;
+  }
+
+  .tilleg_item-description_price {
+    background-color: #ff0650;
+    margin-top: 20px;
+    border-radius: 40px;
+    text-align: center;
+    width: fit-content;
+    padding: 10px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    width: 80%;
+    max-width: 80%;
+
+    &_second {
+      background-color: #33b31a;
+      margin-top: 10px;
+      border-radius: 40px;
+      text-align: center;
+      width: fit-content;
+      padding: 10px 30px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 16px;
+      width: 80%;
+      max-width: 80%;
+    }
+  }
+}

@@ -1,52 +1,30 @@
 .banner {
-  display: flex;
   width: 90%;
-  justify-content: space-around;
-  max-width: 100%;
-  padding-top: 35px;
-  min-height: 515px;
-  background-image: url(../../../i/img/bg-1200.png);
-  background-position-y: top;
 
   &_main {
-    width: 500px;
-    max-width: 500px;
-    min-width: 500px;
+    width: 550px;
+    max-width: 550px;
+    min-width: 550px;
+    padding: 0 15px 90px;
   }
-
   &_title {
     text-align: left;
-    max-width: 350px;
-    margin-top: 95px;
-    font-size: 60px;
-    line-height: 60px;
-  }
-
-  &_text {
-    text-align: left;
-    max-width: 350px;
+    max-width: 495px;
+    margin-left: 65px;
+    font-size: 80px;
+    line-height: 80px;
   }
 
   &_img-block {
-    width: 500px;
-    padding-right: 40px;
-    position: relative;
+    width: 550px;
   }
 
-  &_img {
-    position: absolute;
-    bottom: 0;
-    max-width: initial;
-    width: 100%;
-  }
-
-  &_main {
-    padding-left: inherit;
+  &_text {
+    margin-left: 0;
+    max-width: 400px;
   }
 
   &_button {
-    text-align: left;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin-left: 65px;
   }
 }

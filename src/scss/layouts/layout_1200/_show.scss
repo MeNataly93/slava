@@ -1,26 +1,22 @@
 .show {
-  width: 80%;
-  max-width: 1800px;
-  background-image: url(../../../i/img/show-bg-l.jpg);
-
+  // width: 90%;
   &_title {
-    text-align: right;
-    margin-right: 120px;
-    font-size: 70px;
+    margin-right: 90px;
+    font-size: 90px;
 
     &_sec {
-      text-align: right;
-      margin-right: 120px;
-      font-size: 30px;
-      color: #3a3a3a;
+      font-size: 35px;
+      margin-right: 90px;
     }
   }
 
   &_main-text {
-    margin-right: 120px;
-    color: #f9e853;
+    font-size: 18px;
+    width: 345px;
+    margin-right: 90px;
   }
   &_vent-snart {
-    margin-right: 95px;
+    margin-right: 90px;
+    width: 360px;
   }
 }

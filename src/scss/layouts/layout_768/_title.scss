@@ -15,31 +15,34 @@
 
     height: 606px;
     display: block;
-    margin-bottom: 145px;
+    margin-bottom: 60px;
 
     &_button {
-      font-size: 19px;
+      display: block;
+      font-size: 24px;
       line-height: 70px;
-      max-width: 360px;
-      width: 360px;
-      padding: 11px 16px;
+      max-width: 280px;
+      width: 280px;
+      padding: 10px 28px;
       border-radius: 60px;
       background: #ffe500;
       color: #3a3a3a;
       font-weight: 600;
-      position: absolute;
+      // position: absolute;
       bottom: -90px;
       left: 228px;
-      text-align: left;
+      text-align: center;
       text-decoration: none;
       line-height: 22px;
       font-family: "Open Sans", sans-serif;
       letter-spacing: 0.25px;
       height: auto;
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+      margin-left: auto;
+      margin-right: auto;
       &::before {
         content: url(../../../i/img/play-icon.png);
-        margin-right: 70px;
+        margin-right: 20px;
         vertical-align: middle;
       }
 
