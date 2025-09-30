@@ -52,7 +52,8 @@
       font-family: $mainFontFamily;
       font-weight: 400;
       letter-spacing: 0.25px;
-      padding-top: 125px;
+      padding-top: 20px;
+
       cursor: pointer;
       &:hover {
         background: linear-gradient(90.86deg, #ae67fd 0.17%, #fc67d6 99.85%);
@@ -61,25 +62,30 @@
       }
 
       &_img {
-        position: absolute;
-        top: -125px;
-        display: flex;
+        // position: absolute;
+        // top: -125px;
+        // top: 0;
+        // display: flex;
         justify-content: center;
-        align-items: center;
         width: 200px;
         max-width: 250px;
 
-        margin: 0 auto;
-        z-index: 1000;
+        margin: auto;
+        // z-index: 1000;
 
-        left: 50%;
-        transform: translate(-50%, 0);
-
+        // left: 50%;
+        // transform: translate(-50%, 0);
+        &_1 {
+          // width: 130px;
+          // bottom: 0;
+        }
         &_2 {
-          width: 130px;
+          // width: 130px;
+          // bottom: 0;
         }
         &_3 {
-          width: 180px;
+          // width: 180px;
+          // bottom: 0;
         }
       }
 
@@ -130,6 +136,10 @@
         text-align: center;
         margin-top: 50px;
         margin-bottom: 30px;
+      }
+
+      &_7 {
+        grid-column: 2;
       }
     }
   }

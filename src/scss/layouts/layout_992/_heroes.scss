@@ -21,7 +21,8 @@
   }
 
   &_grid {
-    max-width: 1000px;
+    width: 95%;
+    max-width: 95%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
       "first sec third"
