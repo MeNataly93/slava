@@ -179,7 +179,7 @@ Fancybox.bind("[data-fancybox]", {
   Thumbs: false,
 });
 
-// --Услуги - описание в мобильной версии появляется при клике, действует до расширения 1200 пикс (далее - работа ховера в css)
+// --Услуги - описание в мобильной версии появляется при клике, действует до расширения 992 пикс (далее - работа ховера в css)
 
 const parents = document.querySelectorAll(".tilleg-help-block");
 
@@ -285,7 +285,7 @@ window.addEventListener("resize", updateEventListeners);
 // Вызываем обновление обработчиков сразу после загрузки скрипта
 updateEventListeners();
 
-// --При клике на вкладках в хедере (от 1200 пикс) - переход к нужному блоку, но на 100 пикселей выше
+// --При клике на вкладках в хедере (от 992 пикс) - переход к нужному блоку, но на 100 пикселей выше
 
 // -Helter
 document
@@ -518,23 +518,65 @@ document.addEventListener("DOMContentLoaded", function () {
 // --Всплывающие блоки с героями при нажатии - открытие всплывающего блока
 
 document.addEventListener("DOMContentLoaded", function () {
-  const heroesBlock = document.querySelector(".heroes_grid_block_1");
-  const overlay = document.querySelector(".overlayhelter");
-  const closeBtn = document.querySelector(".overlayhelter .close-button");
   const heroes = document.getElementById("helter-grid");
+  const heroesBlock1 = document.querySelector(".heroes_grid_block_1");
+  const overlay1 = document.querySelector(".overlayhelter_1");
+  const closeBtn1 = document.querySelector(".overlayhelter_1 .close-button_1");
+  const heroesBlock2 = document.querySelector(".heroes_grid_block_2");
+  const overlay2 = document.querySelector(".overlayhelter_2");
+  const closeBtn2 = document.querySelector(".overlayhelter_2 .close-button_2");
+  const heroesBlock3 = document.querySelector(".heroes_grid_block_3");
+  const overlay3 = document.querySelector(".overlayhelter_3");
+  const closeBtn3 = document.querySelector(".overlayhelter_3 .close-button_3");
+  const heroesBlock4 = document.querySelector(".heroes_grid_block_4");
+  const overlay4 = document.querySelector(".overlayhelter_4");
+  const closeBtn4 = document.querySelector(".overlayhelter_4 .close-button_4");
 
   // Изначально скрываем overlay (если нужно)
-  overlay.style.display = "none";
+  overlay1.style.display = "none";
+  overlay2.style.display = "none";
+  overlay3.style.display = "none";
+  overlay4.style.display = "none";
 
   // Открытие overlay
-  heroesBlock.addEventListener("click", function () {
+  heroesBlock1.addEventListener("click", function () {
     heroes.style.display = "none";
-    overlay.style.display = "block";
+    overlay1.style.display = "block";
+  });
+
+  heroesBlock2.addEventListener("click", function () {
+    heroes.style.display = "none";
+    overlay2.style.display = "block";
+  });
+
+  heroesBlock3.addEventListener("click", function () {
+    heroes.style.display = "none";
+    overlay3.style.display = "block";
+  });
+
+  heroesBlock4.addEventListener("click", function () {
+    heroes.style.display = "none";
+    overlay4.style.display = "block";
   });
 
   // Закрытие overlay
-  closeBtn.addEventListener("click", function () {
-    overlay.style.display = "none";
+  closeBtn1.addEventListener("click", function () {
+    overlay1.style.display = "none";
+    heroes.style.display = "grid";
+  });
+
+  closeBtn2.addEventListener("click", function () {
+    overlay2.style.display = "none";
+    heroes.style.display = "grid";
+  });
+
+  closeBtn3.addEventListener("click", function () {
+    overlay3.style.display = "none";
+    heroes.style.display = "grid";
+  });
+
+  closeBtn4.addEventListener("click", function () {
+    overlay4.style.display = "none";
     heroes.style.display = "grid";
   });
 });
