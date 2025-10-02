@@ -531,12 +531,24 @@ document.addEventListener("DOMContentLoaded", function () {
   const heroesBlock4 = document.querySelector(".heroes_grid_block_4");
   const overlay4 = document.querySelector(".overlayhelter_4");
   const closeBtn4 = document.querySelector(".overlayhelter_4 .close-button_4");
+  const heroesBlock5 = document.querySelector(".heroes_grid_block_5");
+  const overlay5 = document.querySelector(".overlayhelter_5");
+  const closeBtn5 = document.querySelector(".overlayhelter_5 .close-button_5");
+  const heroesBlock6 = document.querySelector(".heroes_grid_block_6");
+  const overlay6 = document.querySelector(".overlayhelter_6");
+  const closeBtn6 = document.querySelector(".overlayhelter_6 .close-button_6");
+  const heroesBlock7 = document.querySelector(".heroes_grid_block_7");
+  const overlay7 = document.querySelector(".overlayhelter_7");
+  const closeBtn7 = document.querySelector(".overlayhelter_7 .close-button_7");
 
   // Изначально скрываем overlay (если нужно)
   overlay1.style.display = "none";
   overlay2.style.display = "none";
   overlay3.style.display = "none";
   overlay4.style.display = "none";
+  overlay5.style.display = "none";
+  overlay6.style.display = "none";
+  overlay7.style.display = "none";
 
   // Открытие overlay
   heroesBlock1.addEventListener("click", function () {
@@ -558,6 +570,18 @@ document.addEventListener("DOMContentLoaded", function () {
     heroes.style.display = "none";
     overlay4.style.display = "block";
   });
+  heroesBlock5.addEventListener("click", function () {
+    heroes.style.display = "none";
+    overlay5.style.display = "block";
+  });
+  heroesBlock6.addEventListener("click", function () {
+    heroes.style.display = "none";
+    overlay6.style.display = "block";
+  });
+  heroesBlock7.addEventListener("click", function () {
+    heroes.style.display = "none";
+    overlay7.style.display = "block";
+  });
 
   // Закрытие overlay
   closeBtn1.addEventListener("click", function () {
@@ -577,6 +601,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   closeBtn4.addEventListener("click", function () {
     overlay4.style.display = "none";
+    heroes.style.display = "grid";
+  });
+  closeBtn5.addEventListener("click", function () {
+    overlay5.style.display = "none";
+    heroes.style.display = "grid";
+  });
+  closeBtn6.addEventListener("click", function () {
+    overlay6.style.display = "none";
+    heroes.style.display = "grid";
+  });
+  closeBtn7.addEventListener("click", function () {
+    overlay7.style.display = "none";
     heroes.style.display = "grid";
   });
 });
