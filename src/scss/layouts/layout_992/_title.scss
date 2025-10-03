@@ -3,18 +3,11 @@
   max-width: 1200px;
   display: flex;
 
-  // display: grid;
-  // grid-template-columns: 50% 50%;
-  // grid-template-rows: 1fr 1fr;
-  // grid-template-areas:
-  //   "f-1200 s-1200"
-  //   "l-1200";
+  
 
   &_motor {
     flex-grow: 1;
-    // width: 90vw;
     margin-bottom: 65px;
-    // grid-area: f-1200;
 
     &_img {
       width: 100%;
@@ -22,9 +15,7 @@
       left: 80px;
     }
     &_button {
-      // bottom: 100px;
-      // left: 190px;
-      // margin-left: 30px;
+      
       font-size: 27px;
       max-width: 345px;
       width: 280px;
@@ -40,11 +31,9 @@
     text-align: left;
     margin-top: 40px;
     margin-bottom: 45px;
-    // grid-area: s-1200;
   }
 
   &_list {
-    // grid-area: l-1200;
 
     &_ul {
       grid-template-rows: 160px 160px;

@@ -12,9 +12,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr 1fr;
-    // grid-template-areas:
-    //     "f s"
-    //     "t l";
+    
     column-gap: 30px;
     row-gap: 30px;
     justify-content: center;
@@ -38,22 +36,3 @@
   }
 }
 
-// .tilleg_list_frame:hover .tilleg-help-block {
-//   .tilleg_item-description {
-//     font-size: 12px;
-//     padding: 20px 30px;
-
-//     &_price {
-//       font-size: 12px;
-//       width: 95%;
-//       max-width: 95%;
-//       margin-top: 10px;
-
-//       &_second {
-//         font-size: 12px;
-//         width: 95%;
-//         max-width: 95%;
-//       }
-//     }
-//   }
-// }

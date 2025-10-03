@@ -3,27 +3,22 @@
   margin-bottom: 40px;
   width: 80%;
   max-width: 1200px;
-  background-image: url(/i/img/feedback-l.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: fit-content;
-  background-position-x: center;
-  background-position-y: center;
+  padding-bottom: 40px;
+
   &_title {
-    padding-bottom: 260px;
     text-align: left;
-    padding-left: 80px;
     padding-top: 60px;
-    color: #8b338e;
-  }
-  &_img {
-    display: none;
-  }
-  &_shape {
-    background-image: none;
-  }
-  &_text {
-    margin-right: 20px;
+    color: #3a3a3a;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
     font-size: 30px;
+    text-align: center;
+    width: 100%;
+  }
+
+  &_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }

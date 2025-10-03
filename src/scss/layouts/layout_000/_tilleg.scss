@@ -19,7 +19,6 @@
   }
 
   &_title {
-    // margin-bottom: 1.5em;
     padding-bottom: 39px;
     font-size: 28px;
     display: block;
@@ -149,64 +148,3 @@
   background-color: rgba(58, 58, 58, 0.95);
   background-blend-mode: overlay;
 }
-
-// --ПРИ НАВЕДЕНИИ НА БЛОК
-
-// .tilleg_list_frame:hover .tilleg_item-img {
-//   visibility: hidden;
-// }
-// .tilleg_list_frame:hover .tilleg-help-block {
-//   background-image: url(/i/img/kids.jpg);
-//   background-size: cover;
-//   background-position: top;
-//   background-color: rgba(58, 58, 58, 0.95);
-//   background-blend-mode: overlay;
-//   visibility: visible;
-//   margin-top: auto;
-//   margin-bottom: auto;
-
-//   .tilleg_item-description {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     display: block;
-//     font-size: 14px;
-
-//     line-height: 1.2;
-//     padding: 20px;
-//     color: white;
-//     font-weight: 500;
-//     font-family: $wowFontFamily;
-//     z-index: 2000;
-//     visibility: visible;
-//   }
-
-//   .tilleg_item-description_price {
-//     background-color: #ff0650;
-//     margin-top: 20px;
-//     border-radius: 40px;
-//     text-align: center;
-//     width: fit-content;
-//     padding: 10px 30px;
-//     font-size: 12px;
-//     margin-left: auto;
-//     margin-right: auto;
-//     width: fit-content;
-//     max-width: 90%;
-
-//     &_second {
-//       background-color: #33b31a;
-//       margin-top: 10px;
-//       border-radius: 40px;
-//       text-align: center;
-//       width: fit-content;
-//       padding: 10px 30px;
-//       font-size: 12px;
-//       margin-left: auto;
-//       margin-right: auto;
-//       width: fit-content;
-//       max-width: 90%;
-//     }
-//   }
-// }

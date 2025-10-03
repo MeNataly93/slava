@@ -43,13 +43,6 @@
   }
 }
 
-// --Slick slider
-// .container {
-//   margin-left: auto;
-//   margin-right: auto;
-//   overflow: hidden;
-// }
-
 .dots-box {
   margin: 0 auto;
   padding: 5px;
@@ -81,7 +74,6 @@
 
   & .slick-active button {
     border: 1px solid #fd8b06;
-    // background: url(../../../i/point.svg) 100% 100% no-repeat;
     transition: all 0.3s ease;
     transform: scale(1);
 
