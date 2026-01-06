@@ -615,7 +615,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Закрытие overlay
   closeBtn1.addEventListener("click", function () {
     overlay1.style.display = "none";
-    if (window.matchMedia("(max-width: 992px)").matches) {
+    if (window.matchMedia("(max-width: 767px)").matches) {
       heroes.style.display = "block";
     } else {
       heroes.style.display = "grid";
@@ -624,7 +624,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   closeBtn2.addEventListener("click", function () {
     overlay2.style.display = "none";
-    if (window.matchMedia("(max-width: 992px)").matches) {
+    if (window.matchMedia("(max-width: 767px)").matches) {
       heroes.style.display = "block";
     } else {
       heroes.style.display = "grid";
@@ -633,7 +633,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   closeBtn3.addEventListener("click", function () {
     overlay3.style.display = "none";
-    if (window.matchMedia("(max-width: 992px)").matches) {
+    if (window.matchMedia("(max-width: 767px)").matches) {
       heroes.style.display = "block";
     } else {
       heroes.style.display = "grid";
@@ -642,7 +642,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   closeBtn4.addEventListener("click", function () {
     overlay4.style.display = "none";
-    if (window.matchMedia("(max-width: 992px)").matches) {
+    if (window.matchMedia("(max-width: 767px)").matches) {
       heroes.style.display = "block";
     } else {
       heroes.style.display = "grid";
@@ -650,7 +650,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   closeBtn5.addEventListener("click", function () {
     overlay5.style.display = "none";
-    if (window.matchMedia("(max-width: 992px)").matches) {
+    if (window.matchMedia("(max-width: 767px)").matches) {
       heroes.style.display = "block";
     } else {
       heroes.style.display = "grid";
@@ -658,7 +658,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   closeBtn6.addEventListener("click", function () {
     overlay6.style.display = "none";
-    if (window.matchMedia("(max-width: 992px)").matches) {
+    if (window.matchMedia("(max-width: 767px)").matches) {
       heroes.style.display = "block";
     } else {
       heroes.style.display = "grid";
@@ -666,7 +666,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   closeBtn7.addEventListener("click", function () {
     overlay7.style.display = "none";
-    if (window.matchMedia("(max-width: 992px)").matches) {
+    if (window.matchMedia("(max-width: 767px)").matches) {
       heroes.style.display = "block";
     } else {
       heroes.style.display = "grid";
