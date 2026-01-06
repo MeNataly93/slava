@@ -518,6 +518,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // --Всплывающие блоки с героями при нажатии - открытие всплывающего блока
 
 document.addEventListener("DOMContentLoaded", function () {
+  const helterblock = document.getElementById("helter");
   const heroes = document.getElementById("helter-grid");
   const heroesBlock1 = document.querySelector(".heroes_grid_block_1");
   const overlay1 = document.querySelector(".overlayhelter_1");
@@ -554,65 +555,121 @@ document.addEventListener("DOMContentLoaded", function () {
   heroesBlock1.addEventListener("click", function () {
     heroes.style.display = "none";
     overlay1.style.display = "block";
+    helterblock.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
   });
 
   heroesBlock2.addEventListener("click", function () {
     heroes.style.display = "none";
     overlay2.style.display = "block";
+    helterblock.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
   });
 
   heroesBlock3.addEventListener("click", function () {
     heroes.style.display = "none";
     overlay3.style.display = "block";
+    helterblock.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
   });
 
   heroesBlock4.addEventListener("click", function () {
     heroes.style.display = "none";
     overlay4.style.display = "block";
+    helterblock.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
   });
   heroesBlock5.addEventListener("click", function () {
     heroes.style.display = "none";
     overlay5.style.display = "block";
+    helterblock.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
   });
   heroesBlock6.addEventListener("click", function () {
     heroes.style.display = "none";
     overlay6.style.display = "block";
+    helterblock.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
   });
   heroesBlock7.addEventListener("click", function () {
     heroes.style.display = "none";
     overlay7.style.display = "block";
+    helterblock.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
   });
 
   // Закрытие overlay
   closeBtn1.addEventListener("click", function () {
     overlay1.style.display = "none";
-    heroes.style.display = "grid";
+    if (window.matchMedia("(max-width: 992px)").matches) {
+      heroes.style.display = "block";
+    } else {
+      heroes.style.display = "grid";
+    }
   });
 
   closeBtn2.addEventListener("click", function () {
     overlay2.style.display = "none";
-    heroes.style.display = "grid";
+    if (window.matchMedia("(max-width: 992px)").matches) {
+      heroes.style.display = "block";
+    } else {
+      heroes.style.display = "grid";
+    }
   });
 
   closeBtn3.addEventListener("click", function () {
     overlay3.style.display = "none";
-    heroes.style.display = "grid";
+    if (window.matchMedia("(max-width: 992px)").matches) {
+      heroes.style.display = "block";
+    } else {
+      heroes.style.display = "grid";
+    }
   });
 
   closeBtn4.addEventListener("click", function () {
     overlay4.style.display = "none";
-    heroes.style.display = "grid";
+    if (window.matchMedia("(max-width: 992px)").matches) {
+      heroes.style.display = "block";
+    } else {
+      heroes.style.display = "grid";
+    }
   });
   closeBtn5.addEventListener("click", function () {
     overlay5.style.display = "none";
-    heroes.style.display = "grid";
+    if (window.matchMedia("(max-width: 992px)").matches) {
+      heroes.style.display = "block";
+    } else {
+      heroes.style.display = "grid";
+    }
   });
   closeBtn6.addEventListener("click", function () {
     overlay6.style.display = "none";
-    heroes.style.display = "grid";
+    if (window.matchMedia("(max-width: 992px)").matches) {
+      heroes.style.display = "block";
+    } else {
+      heroes.style.display = "grid";
+    }
   });
   closeBtn7.addEventListener("click", function () {
     overlay7.style.display = "none";
-    heroes.style.display = "grid";
+    if (window.matchMedia("(max-width: 992px)").matches) {
+      heroes.style.display = "block";
+    } else {
+      heroes.style.display = "grid";
+    }
   });
 });
