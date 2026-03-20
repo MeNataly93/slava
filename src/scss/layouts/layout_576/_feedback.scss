@@ -1,3 +1,6 @@
 .feedback {
-  width: 70%;
+  // width: 70%;
+  &_img {
+    max-width: 500px;
+  }
 }

@@ -1,14 +1,17 @@
 .feedback {
-  width: 90%;
+  // width: 100%;
+  //  width: 90%;
   margin-top: 20px;
-  max-width: 470px;
-  margin-left: auto;
-  margin-right: auto;
+  // max-width: 470px;
+  // margin-left: auto;
+  // margin-right: auto;
+  padding-bottom: 20px;
   text-align: center;
-  background-image: url(/i/img/bgfeedback.jpg);
+  background-image: url(/i/img/bgfeedbackparty.jpg);
+  // background-color: #f4eeee;
   opacity: 0.9;
   background-size: cover;
-  background-position-x: center;
+  // background-position-x: left;
   background-position-y: bottom;
   // background: linear-gradient(
   //   0deg,
@@ -16,7 +19,7 @@
   //   rgba(254, 200, 17, 1) 100%
   // );
   text-align: center;
-  border-radius: 40px;
+  // border-radius: 40px;
   &_title {
     font-size: 28px;
     line-height: 28px;
@@ -24,7 +27,7 @@
     letter-spacing: 1.2px;
     font-weight: 800;
     font-family: $wowFontFamily;
-    color: #3a3a3a;
+    color: #ffffff;
     margin-top: 40px;
     margin-bottom: 40px;
     padding-top: 40px;
@@ -33,5 +36,7 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 40px;
+    border-radius: 20px;
   }
 }

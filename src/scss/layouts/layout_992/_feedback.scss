@@ -1,24 +1,30 @@
 .feedback {
   margin-top: 80px;
   margin-bottom: 40px;
-  width: 80%;
-  max-width: 1200px;
-  padding-bottom: 40px;
+  // width: 80%;
+  // max-width: 1200px;
+  // padding-bottom: 40px;
 
   &_title {
     text-align: left;
     padding-top: 60px;
-    color: #3a3a3a;
+    // color: #385469;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-    font-size: 30px;
+    // font-size: 30px;
+    font-size: 48px;
     text-align: center;
     width: 100%;
   }
 
   &_grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  &_img {
+    // margin-bottom: 20px;
+    // max-width: 500px;
   }
 }
