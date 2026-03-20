@@ -40,7 +40,7 @@ module.exports = (env, argv) => {
       new HtmlWebpackPlugin({
         template: path.resolve(__dirname, "src/index.html"),
       }),
-      new webpack.HotModuleReplacementPlugin()
+      new webpack.HotModuleReplacementPlugin(),
     );
 
     templatesFiles.length &&
@@ -49,7 +49,7 @@ module.exports = (env, argv) => {
           new HtmlWebpackPlugin({
             filename: `${item}`,
             template: path.resolve(__dirname, `src/${item}`),
-          })
+          }),
         );
       });
   }
@@ -66,15 +66,15 @@ module.exports = (env, argv) => {
             },
           },
         ],
-      })
+      }),
     );
   }
 
   return {
     mode: argv.mode,
-    stats: "errors-only",
+    stats: "normal",
     entry: {
-      app: ["./src/js/app.js", "./src/scss/style.scss"],
+      app: ["./src/js/app.js"],
     },
     output: {
       path: __dirname + "/public",
